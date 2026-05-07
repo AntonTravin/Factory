@@ -236,6 +236,71 @@ body {
     padding: 2px 5px;
     border-radius: 3px;
 }
+/* Сетка для идиом */
+.idiom-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Карточка идиомы */
+.idiom-item {
+    flex: 1 1 calc(25% - 20px); /* 4 в ряд */
+    min-width: 200px;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px;
+    border-left: 3px solid #eee; /* Декоративная полоса слева */
+    transition: background 0.3s;
+}
+
+.idiom-item:hover {
+    background: #f9f9f9;
+}
+
+.idiom-item b {
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.idiom-item i {
+    color: #666;
+    font-size: 0.9rem;
+}
+/* Сетка для коротких фактов */
+.fact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+/* Компактная карточка */
+.fact-item {
+    flex: 1 1 calc(12.5% - 10px); /* Примерно 8 в ряд на больших экранах */
+    min-width: 140px;            /* Чтобы текст не превращался в узкую полоску */
+    font-size: 13px;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.fact-item b {
+    display: block;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.fact-item i {
+    color: #0d6efd; /* Выделим имя синим цветом */
+    font-style: normal;
+    font-weight: 500;
+}
 
 
 
