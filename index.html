@@ -1,67 +1,160 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <title>Факторий</title>
-  <meta name="description" content="Описание сайта здесь" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- JS Bootstrap 5 (без jQuery) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Дополнительный скрипт -->
-  <script src="js/scroll.js" defer></script>
-</head>
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="style.css">
 <body>
-<div class="container">
-<div class="row">
-<div class="tabbable tabs-left">
- <center><ul class="nav nav-tabs nav-justified" style="padding-top:20px">
-    <li><a href="#1" data-bs-toggle="tab">А</a></li>
-    <li><a href="#2" data-bs-toggle="tab">Б</a></li>
-    <li><a href="#3" data-bs-toggle="tab">В</a></li>
-    <li><a href="#4" data-bs-toggle="tab">Г</a></li>
-    <li><a href="#5" data-bs-toggle="tab">Д</a></li>
-    <li><a href="#6" data-bs-toggle="tab">Е</a></li>
-     <li><a href="#7" data-bs-toggle="tab">Ж</a></li>
-     <li><a href="#8" data-bs-toggle="tab">З</a></li>
-     <li><a href="#9" data-bs-toggle="tab">И</a></li>
-     <li><a href="#10" data-bs-toggle="tab">К</a></li>
-     <li><a href="#11" data-bs-toggle="tab">Л</a></li>
-	 <li><a href="#12" data-bs-toggle="tab">М</a></li>
-    <li><a href="#13" data-bs-toggle="tab">Н</a></li>
-    <li><a href="#14" data-bs-toggle="tab">О</a></li>
-    <li><a href="#15" data-bs-toggle="tab">П</a></li>
-    <li><a href="#16" data-bs-toggle="tab">Р</a></li>
-    <li><a href="#17" data-bs-toggle="tab">С</a></li>
-     <li><a href="#18" data-bs-toggle="tab">Т</a></li>
-     <li><a href="#19" data-bs-toggle="tab">У</a></li>
-     <li><a href="#20" data-bs-toggle="tab">Ф</a></li>
-     <li><a href="#21" data-bs-toggle="tab">Х</a></li>
-     <li><a href="#22" data-bs-toggle="tab">Ц</a></li>
-	 <li><a href="#23" data-bs-toggle="tab">Ч</a></li>
-    <li><a href="#24" data-bs-toggle="tab">Ш</a></li>
-	 <li><a href="#25" data-bs-toggle="tab">Щ</a></li>
-    <li><a href="#26" data-bs-toggle="tab">Э</a></li>
-     <li><a href="#27" data-bs-toggle="tab">Ю</a></li>
-     <li><a href="#28" data-bs-toggle="tab">Я</a></li>
-  
-	  <li style="background-color: darkred;"><a href="#30" data-bs-toggle="tab">Даты</a></li>
-	  <li style="background-color: darkred;"><a href="#40" data-bs-toggle="tab">ПФ</a></li>
-	  <li style="background-color: darkred;"><a href="#41" data-bs-toggle="tab">ОИ</a></li>
-  </ul></center>
-  <div class="tab-content">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#">Факторий</a>
+
+<button class="navbar-toggler bg-light"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#mainMenu">
+
+☰
+
+</button>
+
+<div class="collapse navbar-collapse" id="mainMenu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle"
+data-bs-toggle="dropdown">
+
+Алфавит
+
+</a>
+
+ <ul class="dropdown-menu alphabet-menu">
+  <button class="dropdown-item" data-target-id="#A"> A </button>
+  <button class="dropdown-item" data-target-id="#B"> Б </button>
+  <button class="dropdown-item" data-target-id="#V"> В </button>
+  <button class="dropdown-item" data-target-id="#G"> Г </button>
+  <button class="dropdown-item" data-target-id="#D"> Д </button>
+  <button class="dropdown-item" data-target-id="#E"> Е </button>
+  <button class="dropdown-item" data-target-id="#ZH"> Ж </button>
+  <button class="dropdown-item" data-target-id="#Z"> З </button>
+  <button class="dropdown-item" data-target-id="#I"> И </button>
+  <button class="dropdown-item" data-target-id="#K"> К </button>
+  <button class="dropdown-item" data-target-id="#L"> Л </button>
+  <button class="dropdown-item" data-target-id="#M"> М </button>
+  <button class="dropdown-item" data-target-id="#N"> Н </button>
+  <button class="dropdown-item" data-target-id="#O"> О </button>
+  <button class="dropdown-item" data-target-id="#P"> П </button>
+  <button class="dropdown-item" data-target-id="#R"> Р </button>
+  <button class="dropdown-item" data-target-id="#S"> С </button>
+  <button class="dropdown-item" data-target-id="#T"> Т </button>
+  <button class="dropdown-item" data-target-id="#U"> У </button>
+  <button class="dropdown-item" data-target-id="#F"> Ф </button>
+  <button class="dropdown-item" data-target-id="#H"> Х </button>
+  <button class="dropdown-item" data-target-id="#C"> Ц </button>
+  <button class="dropdown-item" data-target-id="#CH"> Ч </button>
+  <button class="dropdown-item" data-target-id="#SH"> Ш </button>
+  <button class="dropdown-item" data-target-id="#EO"> Э </button>
+  <button class="dropdown-item" data-target-id="#Y"> Ю </button>
+  <button class="dropdown-item" data-target-id="#YA"> Я </button>
+</ul>
+
+</li>
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle"
+data-bs-toggle="dropdown">
+
+События
+
+</a>
+
+<ul class="dropdown-menu">
+
+	<button class="dropdown-item" data-target-id="#ancient"> Древний мир </button>
+	<button class="dropdown-item" data-target-id="#middle"> Средневековье </button>
+	<button class="dropdown-item" data-target-id="#modern"> Новое время </button>
+	<button class="dropdown-item" data-target-id="#latest"> Новейшее время </button>
+
+</ul>
+
+</li>
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle"
+data-bs-toggle="dropdown">
+
+Литература
+
+</a>
+
+<ul class="dropdown-menu">
+
+	<button class="dropdown-item" data-target-id="#lit-before"> Дo XIX </button>
+	<button class="dropdown-item" data-target-id="#lit-19"> XIX </button>
+	<button class="dropdown-item" data-target-id="#lit-20"> XX+ </button>
+
+</ul>
+
+</li>
+
+<li class="nav-item">
+  <button class="nav-link" data-target-id="#science" style="background: none; border: none;">Наука</button>
+</li>
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle"
+data-bs-toggle="dropdown">
+
+Фразы
+
+</a>
+
+<ul class="dropdown-menu">
+<button class="dropdown-item" data-target-id="#idioms"> Идиомы </button>
+<button class="dropdown-item" data-target-id="#pf"> ПФ </button>
+</ul>
+
+</li>
+
+<li class="nav-item">
+  <button class="nav-link" data-target-id="#oi" style="background: none; border: none;">ОИ</button>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<div class="container mt-3">
+
+<input
+type="text"
+id="searchInput"
+class="form-control"
+placeholder="Поиск...">
+
+</div>
+  <div class="tab-content container-fluid px-2 px-md-4 py-3">
       <!-----------------------------А------------------------>
- <div class="tab-pane" id="1">
+ <div class="tab-pane fade" id="A" role="tabpanel">
 
  	<p></p><b>А́нтти А́АРНЕ</b> (1867 — 1925) — финский исследователь фольклора и систематизатор сюжетов. Указатель сказочных типов - сказки о животных, сказки волшебные, легендарные и о глупом черте (великане), анекдоты. Система Аарне-Томпсона
 
@@ -193,8 +286,8 @@
 	 
 	  </div>
 	 <!-----------------------------Б------------------------>
-     <div class="tab-pane" id="2">
-</b>
+     <div class="tab-pane fade" id="B" role="tabpanel">
+
      	<p></p><b>БАГРЯНОРОДСТВО</b> - в Византии дети, рожденные во время правления отца-императора шли в престолонаследии раньше, чем их старшие браться и сестры, которые родились до начала правления.
 		 
 		  <p></p><b>БАЛДУИН IV ПРОКАЖЁННЫЙ</b> — король Иерусалима с 1174 года. Болел с детства. Носил маску лишь в киноадаптациях. Воевал с Саладином (мусульманским лидером)
@@ -348,10 +441,12 @@
 		 <p></p><b>Беназир БХУТТО</b> — премьер-министр Исламской республики Пакистан в 1988—1990 и 1993—1996 гг., первая в новейшей истории женщина — глава правительства в стране с преимущественно мусульманским населением. В результате второго террористического акта 27 декабря 2007 года Бхутто погибла. Пакистанская Индира Ганди.
 		 
      <p></p><b>БЫК ФАЛАРИДА</b> (медный или сицилийский бык) - древнее орудие казни. Внутрь быка сажали казнимого, закрывали, а затем разводили костёр под брюхом статуи. 
+
+     <p></p><b>БЭНСИ</b> — комментатор, чтец, иногда переводчик, дополнительно поясняющий зрителям действие в немых фильмах. Профессия, свойственная почти исключительно японскому кинематографу
      
       </div>
          <!-----------------------------В------------------------>
- <div class="tab-pane" id="3">
+ <div class="tab-pane fade" id="V" role="tabpanel">
 
  	<p></p><b>В САНТЬЯГО ИДЁТ ДОЖДЬ</b> - пароль по военному радио к началу военного мятежа в Чили в 1973 г. Приход генерала Пиночета, свержение президента Альенде.
      
@@ -471,7 +566,7 @@
 	  </div>
 	 
 	  <!-----------------------------Г------------------------>
- <div class="tab-pane" id="4">
+ <div class="tab-pane fade" id="G" role="tabpanel">
 	 
 	 <p></p><b>ГА́БСБУРГИ</b> — одна из наиболее могущественных монарших династий Европы на протяжении Средневековья и Нового времени. Правили Австрией (c 1342 года), Австро-Венгрией (до 1918-го). Императоры Священной Римской империи (XV-XIX века). Особенность - габсбургская губа.
 	 
@@ -659,7 +754,7 @@
       
      </div>
         <!-----------------------------Д------------------------>
- <div class="tab-pane" id="5">
+ <div class="tab-pane fade" id="D" role="tabpanel">
 
  	<p></p><b>ДАГ ДЖОНС</b> — американский актёр, наиболее известный по научно-фантастическим, фэнтезийным и фильмам ужасов, где играл разнообразных нечеловеческих персонажей, зачастую с обилием грима. Снимался в таких фильмах и сериалах, как «Баффи — истребительница вампиров», «Хеллбой: Герой из пекла», «Лабиринт Фавна», «Фантастическая четвёрка 2: Вторжение Серебряного сёрфера», «Форма воды»
 	 
@@ -795,7 +890,7 @@
       
       </div>
     <!-----------------------------Е------------------------>
- <div class="tab-pane" id="6">
+ <div class="tab-pane fade" id="E" role="tabpanel">
 
  	<p></p><b>ЕВАНГЕЛИ́СТЫ</b> (возвещающие хорошую весть) — апостолы, авторы четырёх канонических Евангелий — Матфей, Марк, Лука и Иоанн.
 
@@ -806,7 +901,7 @@
 	  </div>
       
         <!-----------------------------Ж------------------------>
-      <div class="tab-pane" id="7">
+    <div class="tab-pane fade" id="ZH" role="tabpanel">
 
       	<p></p><b>Жозеф ЖАККАР</b> - французский торговец и ткач, изобретатель программируемого ткацкого станка (конец 18 века)
 		  
@@ -827,7 +922,7 @@
 	  </div>
 	  
 	  <!-----------------------------З----------------------->
-      <div class="tab-pane" id="8">
+      <div class="tab-pane fade" id="Z" role="tabpanel">
 		  
 		  <p></p><b>ЗАДАЧА КОММИВОЯЖЁРА</b> — одна из самых известных задач комбинаторной оптимизации, заключающаяся в поиске самого выгодного маршрута, проходящего через указанные города хотя бы по одному разу с последующим возвратом в исходный город.
           
@@ -873,7 +968,7 @@
           
       </div>
             <!-----------------------------И------------------------>
-      <div class="tab-pane" id="9">
+      <div class="tab-pane fade" id="I" role="tabpanel">
 
       	<p></p><b>«И МАЛЬЧИКИ КРОВАВЫЕ В ГЛАЗАХ»</b> — крылатая фраза из трагедии А. С. Пушкина (пушкинизм) «Борис Годунов». Так же как и "Народ безмолвствует".
           
@@ -936,7 +1031,7 @@
 	  </div>
 		  
 		  <!-----------------------------К------------------------>
-      <div class="tab-pane" id="10">
+      <div class="tab-pane fade" id="K" role="tabpanel">
 
       	<p></p>В конце математических доказательств пишут латинскую аббревиатуру <b>Q.E.D.</b> [ку э дэ] — Quod Erat Demonstrandum [куо́д э́рат демонстра́ндум], «Что и требовалось доказать».
 		  
@@ -1217,11 +1312,13 @@
         
       
       <!-----------------------------Л------------------------>
-    <div class="tab-pane" id="11">
+    <div class="tab-pane fade" id="L" role="tabpanel">
 		
 <p></p><b>Ада ЛАВЛЕЙС</b> (19 век) - дочь Байрона, Известна созданием описания вычислительной машины. Ввела в употребление термины «цикл» и «рабочая ячейка», считается первым программистом в истории
         
-    <p></p><b>ЛАМАРКИЗМ  </b>— эволюционная концепция, основывающаяся на теории, выдвинутой в начале XIX века Ламарком в трактате «Философия зоологии». Шесть ступеней животных от инфузорий до млекопитающих. Пример с жирафами - их шеи вытягиваются, потому что им нужно дотягиваться до листвы, обратный пример с кротами - им не нужны глаза, и они исчезают. Полезные признаки передаются потомству. В стихотворении «Ламарк» Осип Мандельштам писал: «на подвижной лестнице Ламарка я займу последнюю ступень».
+    <p></p><b>ЛАМАРКИЗМ</b> — эволюционная концепция, основывающаяся на теории, выдвинутой в начале XIX века Ламарком в трактате «Философия зоологии». Шесть ступеней животных от инфузорий до млекопитающих. Пример с жирафами - их шеи вытягиваются, потому что им нужно дотягиваться до листвы, обратный пример с кротами - им не нужны глаза, и они исчезают. Полезные признаки передаются потомству. В стихотворении «Ламарк» Осип Мандельштам писал: «на подвижной лестнице Ламарка я займу последнюю ступень».
+
+    <p></p><b>ЛАНДСКНЕ́ХТ</b> (нем. «слуга страны») — немецкий наёмный солдат-пехотинец эпохи Средневековья и Возрождения, являвшийся на службу с собственным оружием
 
     <p></p><b>ЛАОКООН</b> - провидец, заклинавший не пускать в Трою деревянного коня ("бойтесь врагов и дары приносящих"). Тогда из моря выплыли две Нептуновы (Аполлоновы) змеи и набросились на Лаокоона и его сыновей, душа кольцами и отравляя ядом. Скульптура "Лаокоон и его сыновья" работы родосских мастеров найдена в Риме в 1506 году. Сейчас в Ватикане. 
 
@@ -1335,7 +1432,7 @@
 	  </div>
 		
 		<!-----------------------------М------------------------>
-    <div class="tab-pane" id="12">
+    <div class="tab-pane fade" id="M" role="tabpanel">
 
     	<p></p><b>МАВАСИ</b> - традиционный пояс сумоиста
 
@@ -1477,6 +1574,8 @@
 
 		<p></p><b>МИТРИДАТ VI ЕВПАТОР</b> - "царь Азии", тело было так укреплёно антидотами от действия ядов, что когда он попытался убить себя, то попросту не смог найти яд, который бы на него подействовал, и попросил своего солдата проткнуть его мечом. Митридат - название смеси противоядия.
 
+		<p></p><b>Фридрих МИШЕР</b> открыл ДНК в 1869 году, когда работал в холодной лаборатории средневекового замка в Тюбингене. О значении его открытия мир узнал поколения спустя. 
+
         <p></p><b>МНОЖЕСТВО МАНДЕЛЬБРОТА</b> является одним из самых известных фракталов, в том числе за пределами математики, благодаря своим цветным визуализациям. 
 
         <p></p><b>МОАИ</b> — каменные монолитные статуи на острове Пасхи в Тихом океане. В настоящее время на острове насчитывается 887 статуй моаи.
@@ -1539,7 +1638,7 @@
         
       </div>
           <!-----------------------------Н------------------------>
-      <div class="tab-pane" id="13">
+      <div class="tab-pane fade" id="N" role="tabpanel">
           
           <p></p>Во время сражения <b>ИИСУС НАВИН</b> (предводитель еврейского народа в период завоевания Ханаана, преемник Моисея), согласно Библии, остановил на небе Солнце и Луну, чтобы противник не смог отступить.
 		  
@@ -1606,7 +1705,7 @@
 	  </div>
 		  
 		  <!-----------------------------О------------------------>
-      <div class="tab-pane" id="14">
+      <div class="tab-pane fade" id="O" role="tabpanel">
          
     <p></p><b>О ЗАКРОЙ СВОИ БЛЕДНЫЕ НОГИ </b>(1895) — моностих Валерия Брюсова
 		  
@@ -1682,7 +1781,7 @@
            
       </div>
             <!-----------------------------П------------------------>
-      <div class="tab-pane" id="15">
+      <div class="tab-pane fade" id="P" role="tabpanel">
 
       	<p></p><b>Людми́ла ПАВЛИЧЕ́НКО</b> - самая успешная женщина-снайпер в мировой истории (309). "Леди Смерть" (в США и Европе)
 
@@ -1954,7 +2053,7 @@
 	  </div>
 		  
 		    <!-----------------------------Р------------------------>
-      <div class="tab-pane" id="16">
+      <div class="tab-pane fade" id="R" role="tabpanel">
            
     <p></p><b>R2D2, C3PO</b> – роботы из «Звездных войн»
 
@@ -2027,7 +2126,7 @@
       </div>
       
       <!-----------------------------С------------------------>
-    <div class="tab-pane" id="17">
+    <div class="tab-pane fade" id="S" role="tabpanel">
 
     	<p></p><b>САБРАЖ</b> — от французского sabrе, то есть «сабля», открывание бутылки шампанского (ну или игристого) ударом сабли. Глагол - сабрировать.
 
@@ -2038,6 +2137,8 @@
 		<p></p><b>САД КАМНЕЙ</b> — разновидность японского сада, появившаяся в период Муромати (1336—1573). Одним из самых известных садов камней является сад пятнадцати камней храма Рёан-дзи. Считается, что увидеть все 15 камней может только «достигший просветления».
 
 <p></p><b> САКС </b>сконструировал саксофон, однако называл его "мундштучный офиклеид" (1842), само слово "саксофон" придумал лишь несколько лет спустя композитор Гектор Берлиоз в знак почтения своему другу-изобретателю.
+
+<p></p><b>САКСОН ГРАММАТИК</b> (1150 — около 1220) — датский хронист, автор латинских «Деяний данов» в 16 томах, изложивший в них древнейшие скандинавские саги.
 		
 		<p></p><b>Анто́ниу САЛАЗА́Р</b> — португальский государственный деятель, премьер-министр Португалии в течение 36 лет (1932 - 1968), главный «архитектор», идеолог и лидер «Нового государства».
 		
@@ -2267,7 +2368,7 @@
 	  </div>
 		
 		 <!-----------------------------Т------------------------>
-    <div class="tab-pane" id="18">
+    <div class="tab-pane fade" id="T" role="tabpanel">
 
     	<p></p><b>ТАЙКОНАВТ</b> -  космонавт, работающий в рамках космической программы Китая
 
@@ -2409,7 +2510,7 @@
     </div>
       
        <!-----------------------------У------------------------>
-    <div class="tab-pane" id="19">
+    <div class="tab-pane fade" id="U" role="tabpanel">
 
     	<p></p><b>Дерсу́ УЗАЛА́</b> (1849 - 1908) — коренной житель Уссурийского края, охотник, проводник и участник экспедиций В. К. Арсеньева 1906 и 1907 гг. Герой его повестей. Одноименный фильм Куросавы 1975 года получил Оскар.
 
@@ -2437,7 +2538,7 @@
 	  </div>
 		
 		   <!-----------------------------Ф------------------------>
-    <div class="tab-pane" id="20">
+    <div class="tab-pane fade" id="F" role="tabpanel">
 		
 		<p></p><b>ФА́ДУ</b> — португальский музыкальный жанр. Буквально слово «фаду» означает «фатум», «судьба», доминантной эмоцией в произведениях является принятие горькой судьбы.
 		
@@ -2528,7 +2629,7 @@
 	  </div>
 		
 		  <!-----------------------------Х------------------------>
-    <div class="tab-pane" id="21">
+    <div class="tab-pane fade" id="H" role="tabpanel">
         
         <p></p><b>HAL 9000</b> — вымышленный компьютер из цикла произведений «Космическая одиссея» Артура Кларка, обладающий способностью к самообучению и являющийся примером искусственного интеллекта в научной фантастике. «2001: Космическая одиссея» Кубрика
 		
@@ -2603,7 +2704,7 @@
 	   </div>
 		
 		  <!-----------------------------Ц------------------------>
-    <div class="tab-pane" id="22">
+    <div class="tab-pane fade" id="C" role="tabpanel">
 		
 		<p></p><b>ЦВЕТОВОЙ ТЕСТ ЛЮШЕРА</b> — методика исследования личности, впервые опубликованная швейцарским психотерапевтом Максом Люшером в 1949 году.
 
@@ -2622,7 +2723,7 @@
 		  </div>
 		
 		<!-----------------------------Ч------------------------>
-    <div class="tab-pane" id="23">
+    <div class="tab-pane fade" id="CH" role="tabpanel">
         
 <p></p><b>ЧАЙКА</b> – позывной Валентины Терешковой. Терешкова совершила полёт на корабле «Восток-6»
 		
@@ -2679,7 +2780,7 @@
       </div>
       
       <!-----------------------------Ш------------------------>
-    <div class="tab-pane" id="24">
+    <div class="tab-pane fade" id="SH" role="tabpanel">
 		
 		<p></p><b>Жан-Франсуа́ ШАМПОЛЬО́Н</b> — французский востоковед, основатель египтологии. Благодаря проведённой им расшифровке текста Розеттского камня 14 сентября 1822 года стало возможным чтение египетских иероглифов.
 		
@@ -2738,15 +2839,12 @@
 <p></p><b>ШТРЕЙКБРЕ́ХЕР</b> — во время забастовки, человек отказывающийся поддержать бастующих. Предатель общих интересов
 		
 		<p></p><b>ШУМЕ́Р</b> — историческая область в Южной Месопотамии (южная часть современного Ирака), а также название ранней цивилизации, существовавшей в указанной области и смежных районах в эпоху ранней бронзы. Шумерская цивилизация — вероятно, является древнейшей в мире, а её коренную территорию традиционно называют «колыбелью цивилизации». Шумерам приписывается множество изобретений, таких как колесо, письменность, ирригационная система, сельскохозяйственные орудия, гончарный круг и даже пивоварение. Система счисления легла в основу деления времени (60 минут и секунд). Изобретен зодиак в астрономии, календари. Первые законы. Зиккураты как прообраз Вавилонской башни. 
-	  </div>
-		
-	    <!-----------------------------Щ------------------------>
-    <div class="tab-pane" id="25">
+	  
 		<p></p><b>ЩЕРБЕЦ</b> — меч и реликвия польских королей, который использовали во время торжественных коронаций. Считается единственной из сохранившихся древних регалий Пястов. По легенде, на мече осталась зазубрина, когда Болеслав I Храбрый (или его правнук Болеслав II) в XI веке ударил им по Золотым воротам Киева.
 	  </div>
 		      
       <!-----------------------------Э------------------------>
-    <div class="tab-pane" id="26">
+    <div class="tab-pane fade" id="EO" role="tabpanel">
         
 <p></p><b>ЭББОТТ И КОСТЕЛЛО </b>— американский комедийный дуэт 50-х годов XX века. 
 
@@ -2822,7 +2920,7 @@
 		
 	  </div>
 		  <!-----------------------------Ю------------------------>
-    <div class="tab-pane" id="27">
+    <div class="tab-pane fade" id="U" role="tabpanel">
 		
 		<p></p><b>ЮВЕНА́Л</b> (ок. 60 — ок. 127) — римский поэт-сатирик. Считается классиком так называемой "суровой сатиры".
 
@@ -2837,7 +2935,7 @@
 	  </div>
 	  
 	   <!-----------------------------Я------------------------>
-    <div class="tab-pane" id="28">
+    <div class="tab-pane fade" id="YA" role="tabpanel">
         
         
         <p></p><b> Я́БЛОКО РАЗДО́РА</b> — миф., причина ссоры трёх женщин-богинь — Геры, Афины и Афродиты. Их судил юноша Парис, присудивший победу Афродите, которая за это помогла ему выкрасть Елену, жену спартанского царя Менелая. Это стало причиной Троянской войны. «Яблоко раздора» - незначительная вещь или событие, приводящее к масштабным и разрушительным последствиям.
@@ -2853,477 +2951,578 @@
 		<p></p><b>ЯНТАРНАЯ КОМНАТА</b> — знаменитый шедевр искусства XVIII века, бесследно исчезнувший во время Второй мировой войны. Создана немецкими мастерами для прусского короля Фридриха I, затем подарена Петру I. Считалась жемчужиной летней резиденции российских императоров в Царском Селе.
     
 	  </div>
-	  <div id="scrollup"><img src="img/up.png"></div>
+	  
 	  
 	  
 	    <!-----------------------------Даты------------------------>
-    <div class="tab-pane" id="30">
-		<center><ul class="nav nav-tabs">
-  <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#31">Древний мир</a></li>
-  <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#32">Средневековье</a></li>
-  <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#33">Новое время</a></li>
-<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#34">Новейшее время</a></li>
-			<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#35">Литература</a></li>
-			<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#39">Наука</a></li>
-</ul></center>
-<div class="tab-content">
-	
+  
 	<!--ДРЕВНИЙ МИР-->
   
-	<div class="tab-pane" id="31">
-     <p></p><b>более 3 млн</b> Австралопитек ("южная обезьяна")
-		<p></p><b>более 2 млн</b> Homo habilis (человек умелый)
-		<p></p><b>1,5 млн</b> Homo erectus (человек прямоходящий)
-		<p></p><b>300 тыс</b> Неандерталец
-		<p></p><b>100 тыс</b> Резкое похолодание
-		<p></p><b>40 тыс</b> Homo sapiens
-<p></p><b>4-3 тыс. лет</b>	Формирование в Месопотамии (междуречьи) раннеклассовых государств (Ур, Урук, Лагаш и др.).
-<p></p><b>1790-1740 гг</b>	Расцвет Древнего Вавилона во время правления Хаммурапи.
-<p></p><b>VIII-VII века</b>	Период наивысшего могущества Ассирии - Древнего государства в Месопотамии.
-<p></p><b>ок. 2800-1100 лет</b>	Возникновение, расцвет и гибель эгейского (крито-микенской) культуры (культуры Древней Греции эпохи бронзы).
-<p></p><b>ок. 2600 лет</b>	Сооружение в Гизе крупнейшей (высота 146,6 м) пирамиды Хеопса в Египте.
-<p></p><b>ок. 1200 лет</b>	Троянская война. Завершилась взятием Трои ахейцами.
-<p></p><b>Конец II тыс.</b>	Переселение дорийцев в Грецию.
-<p></p><b>754-753</b>	Согласно преданию основание города Рима братьями Ромулом и Ремом.
-<p></p><b>776</b>	Начало Олимпийских игр в Древней Греции в честь бога Зевса.
-<p></p><b>605-562</b>	Расцвет Ново-Вавилонского государства.
-<p></p><b>539</b>	Покорение Вавилона персами.
-<p></p><b>525</b>	Взятие Египта персами.
-<p></p><b>509</b>	Установление в Риме республики.
-<p></p><b>500-449</b>	Греко-персидские войны.
-<p></p><b>490 </b>	Поражение персидского царя Дария при Марафоне.
-<p></p><b>480 </b>	Победа греков у острова Саламин.
-<p></p><b>444/443-429 </b>	Правление афинского главнокомандующего Перикла - вождя демократической группировки.
-<p></p><b>336-323</b>	Правление и завоевательные войны Александра Македонского.
-<p></p><b>264-146</b>	Первая Пуническая война между Римом и Карфагеном за господство в Средиземноморье. Закончились взятием Карфагена
-<p></p><b>II век</b>	Большие территориальные завоевания римлян.
-<p></p><b>74/73-71</b>	Восстание рабов под предводительством Спартака в Италии. Спартак был разбит римской армией под руководством Красса и погиб в бою.
-<p></p><b>49-44</b>	Правление римского диктатора Гая Юлия Цезаря.
-<p></p><b>43-31</b>	Гражданские войны в Италии.
-<p></p><b>27-14</b>	Начало правления внучатого племянника Цезаря - Октавиана Августа
-<p></p><b>14-37</b>		Правление римского императора Тиберия из династии Юлиев-Клавдиев.
-<p></p><b>17-27</b>		Восстание "краснобровых" - одно из крупнейших в Китае. Восставшие красили брови в красный цвет. Вызвано гнётом императорских властей и голодом. Подавлено императорскими войсками.
-<p></p><b>64</b>		Гонение на христиан.
-<p></p><b>98-117</b>		Правление Траяна, при котором Римская империя достигла наивысшего могущества.
-<p></p><b>184-204</b>		Восстание "жёлтых повязок" в Китае. Восставшие носили жёлтые повязки как символ "жёлтого неба" - государства благоденствия. Подавлено правительственными войсками.
-<p></p><b>284-305</b>		Правление римского императора Диоклетиана, проведшего реформы, стабилизировавшие положение империи, усилившего гонения на христиан.
-<p></p><b>306-337</b>		Правление Константина Великого, при котором христианство стало государственной религией Рима.
-<p></p><b>313</b>   Миланский эдикт - соглашение, достигнутое в 313 году, провозглашавшее религиозную терпимость на территории Римской империи.
-<p></p><b>324-330</b>		Основание новой столицы Константинополя на месте г. Византий.
-  </div>
-	
+	<div class="tab-pane fade" id="ancient" role="tabpanel">
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <span class="timeline-date">более 3 млн</span>
+      <div class="timeline-content">
+        <b>Австралопитек ("южная обезьяна")</b>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-date">более 2 млн</span>
+      <div class="timeline-content">
+        <b>Homo habilis (человек умелый)</b>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-date">1,5 млн</span>
+      <div class="timeline-content">
+        <b>Homo erectus (человек прямоходящий)</b>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-date">300 тыс</span>
+      <div class="timeline-content">
+        <b>Неандерталец</b>
+      </div>
+    </div>
+ <div class="timeline-item">
+      <span class="timeline-date">100 тыс</span>
+      <div class="timeline-content">
+        <b>Резкое похолодание</b>
+      </div>
+    </div>
+     <div class="timeline-item">
+      <span class="timeline-date">40 тыс</span>
+      <div class="timeline-content">
+        <b>Homo sapiens</b>
+      </div>
+    </div>
+     <div class="timeline-item">
+      <span class="timeline-date">300 тыс</span>
+      <div class="timeline-content">
+        <b>Неандерталец</b>
+      </div>
+    </div>
+     <div class="timeline-item">
+      <span class="timeline-date">4-3 тыс</span>
+      <div class="timeline-content">
+        <b>Формирование в Месопотамии (междуречьи) раннеклассовых государств (Ур, Урук, Лагаш и др.)</b>
+      </div>
+    </div>
+    <div class="timeline-item">
+        <span class="timeline-date">ок. 2800–1100 гг. до н. э.</span>
+        <div class="timeline-content"><b>Эгейская (крито-микенская) культура</b> (возникновение, расцвет и гибель культуры Древней Греции эпохи бронзы)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">ок. 2600 г. до н. э.</span>
+        <div class="timeline-content"><b>Пирамида Хеопса</b> (сооружение в Гизе крупнейшей пирамиды в Египте, высота 146,6 м)</div>
+    </div>
+<div class="timeline-item">
+        <span class="timeline-date">1792–1750 гг. до н. э.</span>
+        <div class="timeline-content"><b>Правление Хаммурапи в Вавилоне</b> (период расцвета государства, создание одного из древнейших сводов законов)</div>
+    </div>
+    <div class="timeline-item">
+        <span class="timeline-date">ок. 1200 г. до н. э.</span>
+        <div class="timeline-content"><b>Троянская война</b> (завершилась взятием Трои ахейцами)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">Конец II тыс. до н. э.</span>
+        <div class="timeline-content"><b>Переселение дорийцев</b> в Грецию</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">VIII–VII вв. до н. э.</span>
+        <div class="timeline-content"><b>Могущество Ассирии</b> (период наивысшего расцвета древнего государства в Месопотамии)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">776 г. до н. э.</span>
+        <div class="timeline-content"><b>Первые Олимпийские игры</b> в Древней Греции в честь бога Зевса</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">754–753 гг. до н. э.</span>
+        <div class="timeline-content"><b>Основание Рима</b> (согласно преданию, город основан братьями Ромулом и Ремом)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">605–562 гг. до н. э.</span>
+        <div class="timeline-content"><b>Ново-Вавилонское государство</b> (период наибольшего расцвета)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">539 г. до н. э.</span>
+        <div class="timeline-content"><b>Покорение Вавилона</b> персами</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">525 г. до н. э.</span>
+        <div class="timeline-content"><b>Взятие Египта</b> персами</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">509 г. до н. э.</span>
+        <div class="timeline-content"><b>Римская республика</b> (установление республиканского строя в Риме)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">500–449 гг. до н. э.</span>
+        <div class="timeline-content"><b>Греко-персидские войны</b></div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">490 г. до н. э.</span>
+        <div class="timeline-content"><b>Марафонская битва</b> (поражение персидского царя Дария)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">480 г. до н. э.</span>
+        <div class="timeline-content"><b>Битва при Саламине</b> (победа греческого флота над персами)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">444–429 гг. до н. э.</span>
+        <div class="timeline-content"><b>Век Перикла</b> (расцвет афинской демократии)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">336–323 гг. до н. э.</span>
+        <div class="timeline-content"><b>Александр Македонский</b> (завоевательные войны и создание мировой державы)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">264–146 гг. до н. э.</span>
+        <div class="timeline-content"><b>Пунические войны</b> (борьба Рима и Карфагена, разрушение Карфагена)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">II в. до н. э.</span>
+        <div class="timeline-content"><b>Расширение Рима</b> (крупные территориальные завоевания в Средиземноморье)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">74–71 гг. до н. э.</span>
+        <div class="timeline-content"><b>Восстание Спартака</b> (крупнейшее восстание рабов в Италии)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">49–44 гг. до н. э.</span>
+        <div class="timeline-content"><b>Диктатура Юлия Цезаря</b></div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">43–31 гг. до н. э.</span>
+        <div class="timeline-content"><b>Гражданские войны</b> в Риме после смерти Цезаря</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">27 г. до н. э. – 14 г. н. э.</span>
+        <div class="timeline-content"><b>Октавиан Август</b> (начало эпохи империи в Риме)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">14–37 гг.</span>
+        <div class="timeline-content"><b>Император Тиберий</b> (династия Юлиев-Клавдиев)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">17–27 гг.</span>
+        <div class="timeline-content"><b>Восстание «краснобровых»</b> в Китае</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">64 г.</span>
+        <div class="timeline-content"><b>Гонения на христиан</b> в Риме при Нероне</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">98–117 гг.</span>
+        <div class="timeline-content"><b>Правление Траяна</b> (наивысшее могущество Римской империи)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">184–204 гг.</span>
+        <div class="timeline-content"><b>Восстание «жёлтых повязок»</b> в Китае</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">284–305 гг.</span>
+        <div class="timeline-content"><b>Реформы Диоклетиана</b> (стабилизация империи, установление домината)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">306–337 гг.</span>
+        <div class="timeline-content"><b>Константин Великий</b> (признание христианства)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">313 г.</span>
+        <div class="timeline-content"><b>Миланский эдикт</b> (провозглашение веротерпимости)</div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-date">324–330 гг.</span>
+        <div class="timeline-content"><b>Основание Константинополя</b> (перенос столицы империи на Восток)</div>
+    </div>
+
+</div></div>
+  
+
 	<!--СРЕДНЕВЕКОВЬЕ-->
   
-	<div class="tab-pane" id="32">
-    	<p></p><b>476</b> Падение Западной Римской империи
-		<p></p><b>486</b> Государство франков
-		<p></p><b>493</b> Государство остготов в Италии
-		<p></p><b>527-565</b> Юстиниан в Византии
-		<p></p><b>VII</b> Возникновение ислама
-		<p></p><b>630</b> Арабское государство
-		<p></p><b>751</b> Династия Каролингов у франков
-		<p></p><b>1204</b> Захват крестоносцами Константинополя
-		<p></p><b>1215</b> Великая хартия вольностей в Англии
-		<p></p><b>1265</b> Первый парламент в Англии
-		<p></p><b>1302</b> Первые генеральные штаты во Франции
-		<p></p><b>1337-1453</b> Столетняя война (ENG vs FRA, победа FRA)
-		<p></p><b>1358</b> Жакерия (крестьянское антифеодальное восстание во Франции)
-		<p></p><b>1368</b> Освобождение Китая от монголов
-		<p></p><b>1381</b> Восстание Уота Тайлера (крупнейшее в Англии крестьянское восстание)
-		<p></p><b>1389</b> Битва на Косовом поле (турки победили сербо-боснийцев)
-		<p></p><b>1402</b> Разгром турок-османов Тимуром
-		<p></p><b>1419-1434</b> Гуситские войны (против кат.церкви и немецкого господства в Чехии из-за казни Яна Гуса)
-		<p></p><b>1445</b> Изобретение книгопечатания Гуттенбергом
-		<p></p><b>1453</b> Гибель Византии
-		<p></p><b>1455-1485</b> Война Алой (Ланкастеры) и Белой (Йорки) розы в Англии. Приход Тюдоров
-		<p></p><b>1461-1483</b> Людовик XI во Франции
-		<p></p><b>1485-1509</b> Генрих VII в Англии
-		<p></p><b>1492</b> Завершение Реконкисты (изгнание мусульман из Кастилии на Пиренеях). Открытие Нового Света Колумбом ("Нинья", "Пинта", "Санта-Мария")
-		<p></p><b>1497-1499</b> Открытие Васко да Гама морского пути в Индию
-		   <p></p><b>1517</b> Начало Реформации (реформирование кат.церкви в Европе)
-		<p></p><b>1519-1522</b> Кругосветное плавание Магеллана
-		<p></p><b>1524-1526</b> Крестьянская война в Германии
-		<p></p><b>1526</b> Империя Великих Моголов в Индии
-		<p></p><b>1562-1598</b> Религиозные войны во Франции
-		<p></p><b>1566-1609</b> Освободительная война в Нидерландах
-		<p></p><b>1569</b> Реч Посполитая
-		<p></p><b>1572</b> Варфоломеевская ночь (массовое убийство гугенотов во Франции, устроенное католиками в ночь на 24 августа)
-		<p></p><b>1588</b> Разгром испанской Непобедимой армады англо-голландским флотом
-  </div>
+	<div class="tab-pane fade" id="middle" role="tabpanel">
+    <div class="timeline">
+    <div class="timeline-item"><span class="timeline-date">476</span><div class="timeline-content"><b>Падение Западной Римской империи</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">486</span><div class="timeline-content"><b>Государство франков</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">493</span><div class="timeline-content"><b>Государство остготов в Италии</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">527–565</span><div class="timeline-content"><b>Юстиниан в Византии</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">VII в.</span><div class="timeline-content"><b>Возникновение ислама</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">630</span><div class="timeline-content"><b>Арабское государство</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">751</span><div class="timeline-content"><b>Династия Каролингов</b> у франков</div></div>
+    <div class="timeline-item"><span class="timeline-date">1204</span><div class="timeline-content"><b>Захват Константинополя</b> крестоносцами</div></div>
+    <div class="timeline-item"><span class="timeline-date">1215</span><div class="timeline-content"><b>Великая хартия вольностей</b> в Англии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1265</span><div class="timeline-content"><b>Первый парламент</b> в Англии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1302</span><div class="timeline-content"><b>Генеральные штаты</b> во Франции</div></div>
+    <div class="timeline-item"><span class="timeline-date">1337–1453</span><div class="timeline-content"><b>Столетняя война</b> (ENG vs FRA, победа Франции)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1358</span><div class="timeline-content"><b>Жакерия</b> (восстание во Франции)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1368</span><div class="timeline-content"><b>Освобождение Китая</b> от монголов</div></div>
+    <div class="timeline-item"><span class="timeline-date">1381</span><div class="timeline-content"><b>Восстание Уота Тайлера</b> в Англии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1389</span><div class="timeline-content"><b>Битва на Косовом поле</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1402</span><div class="timeline-content"><b>Разгром османов Тимуром</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1419–1434</span><div class="timeline-content"><b>Гуситские войны</b> в Чехии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1445</span><div class="timeline-content"><b>Книгопечатание Гуттенберга</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1453</span><div class="timeline-content"><b>Гибель Византии</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1455–1485</span><div class="timeline-content"><b>Война Алой и Белой розы</b> (приход Тюдоров)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1461–1483</span><div class="timeline-content"><b>Людовик XI</b> во Франции</div></div>
+    <div class="timeline-item"><span class="timeline-date">1485–1509</span><div class="timeline-content"><b>Генрих VII</b> в Англии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1492</span><div class="timeline-content"><b>Завершение Реконкисты</b>. Открытие Америки Колумбом</div></div>
+    <div class="timeline-item"><span class="timeline-date">1618–1648</span><div class="timeline-content"><b>Тридцатилетняя война</b> (итог — Вестфальский мир)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1624–1642</span><div class="timeline-content"><b>Кардинал Ришелье</b> во Франции</div></div>
+    <div class="timeline-item"><span class="timeline-date">1640–1660</span><div class="timeline-content"><b>Революция в Англии</b> (смерть Кромвеля и реставрация Стюартов)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1644</span><div class="timeline-content"><b>Завоевание Китая маньчжурами</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1688</span><div class="timeline-content"><b>«Славная» революция</b> в Англии (Билль о правах)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1701–1714</span><div class="timeline-content"><b>Война за испанское наследство</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1715–1774</span><div class="timeline-content"><b>Людовик XV</b> во Франции</div></div>
+    <div class="timeline-item"><span class="timeline-date">1740–1748</span><div class="timeline-content"><b>Война за австрийское наследство</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1740–1786</span><div class="timeline-content"><b>Фридрих II</b> в Пруссии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1773</span><div class="timeline-content"><b>Бостонское чаепитие</b> (протест американских колонистов)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1775–1783</span><div class="timeline-content"><b>Война за независимость США</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1776</span><div class="timeline-content"><b>Декларация независимости США</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1787</span><div class="timeline-content"><b>Конституция США</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1789–1799</span><div class="timeline-content"><b>Революция во Франции</b> (взятие Бастилии, приход Наполеона)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1796–1799</span><div class="timeline-content"><b>Итальянский и египетский походы</b> Наполеона</div></div>
+    <div class="timeline-item"><span class="timeline-date">1810–1826</span><div class="timeline-content"><b>Независимость колоний в Латинской Америке</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1814–1815</span><div class="timeline-content"><b>Венский конгресс</b> (новые границы Европы)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1823</span><div class="timeline-content"><b>Доктрина Монро</b> в США</div></div>
+    <div class="timeline-item"><span class="timeline-date">1830–1848</span><div class="timeline-content"><b>Июльская монархия</b> во Франции</div></div>
+    <div class="timeline-item"><span class="timeline-date">1834</span><div class="timeline-content"><b>Восстание ткачей</b> в Лионе</div></div>
+    <div class="timeline-item"><span class="timeline-date">1836–1848</span><div class="timeline-content"><b>Чартистское движение</b> в Англии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1840–1842</span><div class="timeline-content"><b>Первая опиумная война</b> в Китае</div></div>
+    <div class="timeline-item"><span class="timeline-date">1848–1849</span><div class="timeline-content"><b>«Весна народов»</b> (революции в Европе)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1850–1864</span><div class="timeline-content"><b>Восстание тайпинов</b> в Китае</div></div>
+    <div class="timeline-item"><span class="timeline-date">1853–1856</span><div class="timeline-content"><b>Крымская война</b> (Россия против коалиции)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1857–1859</span><div class="timeline-content"><b>Восстание сипаев</b> в Индии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1861–1865</span><div class="timeline-content"><b>Гражданская война в США</b> (отмена рабства)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1862–1890</span><div class="timeline-content"><b>Эпоха Бисмарка</b> в Германии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1864</span><div class="timeline-content"><b>I Интернационал</b> (товарищество рабочих)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1867</span><div class="timeline-content"><b>Создание Австро-Венгрии</b></div></div>
+
+</div>
+
+</div>
+
+  
 	
 	<!--НОВОЕ ВРЕМЯ-->
 	
-  <div class="tab-pane" id="33">
-
-		<p></p><b>1618-1648</b> Тридцатилетняя война (за гегемонию в Священной Римской империи германской нации, итог - Вестфальский мир)
-		<p></p><b>1624-1642</b> кардинал Ришелье во Франции
-		<p></p><b>1640-1660</b> Революция в Англии (итог - смерть Кромвеля и реставрация династии Стюартов)
-		<p></p><b>1644</b> Завоевание Китая маньчжурами
-		<p></p><b>1688</b> "Славная" революция в Англии (английским королем стал Вильгельм Оранский, Билль о правах ограничил власть монарха)
-		<p></p><b>1701-1714</b> Война за испанское наследство (Филипп V остался королём Испании, но лишился права наследовать французский престол)
-		<p></p><b>1715-1774</b> Людовик XV во Франции
-		<p></p><b>1740-1748</b> Война за австрийское наследство (попытка ряда европейских держав расчленить значительные владения дома Габсбургов в Европе)
-		<p></p><b>1740-1786</b> Фридрих II в Пруссии
-		<p></p><b>1773</b> Бостонское чаепитие (акция протестa американских колонистов 16 декабря в ответ на действия британского правительства - уничтожение груза чая)
-		<p></p><b>1775-1783</b> Война за независимость североамериканских колоний Великобритании
-		<p></p><b>1776</b> Декларация независимости США
-		<p></p><b>1787</b> Конституция США
-		<p></p><b>1789-1799</b> Революция во Франции («Свобода, равенство, братство» - первая французская республика, взятие Бастилии, приход Наполеона к власти)
-		<p></p><b>1796-1799</b> Итальянский и египетский походы Наполеона Бонапарта
-		<p></p><b>1810-1826</b> Война за независимость испанских колоний в Латинской Америке
-		<p></p><b>1814-1815</b> Венский конгресс (восстановление феод.- абс. монархий, новые границы Европы)
-		<p></p><b>1823</b> Доктрина Монро в США (принципы внешней политики)
-		<p></p><b>1830-1848</b> Июльская монархия во Франции (закончилась второй республикой)
-		<p></p><b>1834</b> Восстание рабочих (ткачей) в Лионе
-		<p></p><b>1836-1848</b> Чартистское (от слова хартия) движение в Англии
-		<p></p><b>1840-1842</b> Первая опиумная война (военные конфликты на территории Китая в XIX веке между западными державами и Империей Цин)
-		<p></p><b>1848-1849</b> Революции в Западной Европе ("весна народов")
-		<p></p><b>1850-1864</b> Восстание тайпинов в Китае (крестьянская война в Китае против маньчжурской империи Цин и иностранных колонизаторов)
-		<p></p><b>1853-1856</b> Крымская война (Росс.империя VS коалиция в составе Брит., Франц., Осм. империй и Сардинского королевства, поражение России, Парижский мирный договор)
-		<p></p><b>1857-1859</b> Восстание сипаев в Индии (восстание индийских солдат против колониальной политики англичан)
-		<p></p><b>1861-1865</b> Гражданская война в США (рабовладельческий Юг против Севера, итог - отмена рабства)
-		<p></p><b>1862-1890</b> Бисмарк в Пруссии (Германии)
-		<p></p><b>1864</b> I Интернационал (международное товарищество рабочих)
-		<p></p><b>1867</b> Австрийская империя становится Австро-Венгрией
-		<p></p><b>1868</b> Революция Мэйдзи в Японии (император Муцухито, отказ от изоляции)
-		<p></p><b>1870</b> Объединение Италии, Франко-прусская война, Третья республика во Франции
-		<p></p><b>1871</b> Германская Империя
-		<p></p><b>1882</b> Создание Тройственного союза (GER, AUS-HUN,ITA)
-		<p></p><b>1885</b> Индийский нац.конгресс (первая политическая организация в Индии)
-		<p></p><b>1889</b> II Интернационал
-		<p></p><b>1899-1902</b> Англо-бурская война (война Южно-Африканской республики и Оранжевого Свободного государства против Британской империи)
-  </div>
-	
+  <div class="tab-pane fade" id="modern" role="tabpanel">
+  	<div class="timeline">
+    <div class="timeline-item"><span class="timeline-date">1497–1499</span><div class="timeline-content"><b>Васко да Гама</b>: путь в Индию</div></div>
+    <div class="timeline-item"><span class="timeline-date">1517</span><div class="timeline-content"><b>Начало Реформации</b> (95 тезисов Лютера)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1519–1522</span><div class="timeline-content"><b>Плавание Магеллана</b> (кругосветное)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1524–1526</span><div class="timeline-content"><b>Крестьянская война</b> в Германии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1526</span><div class="timeline-content"><b>Империя Великих Моголов</b> в Индии</div></div>
+    <div class="timeline-item"><span class="timeline-date">1562–1598</span><div class="timeline-content"><b>Религиозные войны</b> во Франции</div></div>
+    <div class="timeline-item"><span class="timeline-date">1566–1609</span><div class="timeline-content"><b>Война в Нидерландах</b> (освободительная)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1569</span><div class="timeline-content"><b>Речь Посполита</b> (Люблинская уния)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1572</span><div class="timeline-content"><b>Варфоломеевская ночь</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1588</span><div class="timeline-content"><b>Разгром «Непобедимой армады»</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1868</span><div class="timeline-content"><b>Революция Мэйдзи</b> в Японии (император Муцухито, отказ от изоляции)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1870</span><div class="timeline-content"><b>Объединение Италии</b>, Франко-прусская война, Третья республика во Франции</div></div>
+    <div class="timeline-item"><span class="timeline-date">1871</span><div class="timeline-content"><b>Германская Империя</b> (провозглашение империи в Версале)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1882</span><div class="timeline-content"><b>Тройственный союз</b> (Германия, Австро-Венгрия, Италия)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1885</span><div class="timeline-content"><b>Индийский нац. конгресс</b> (первая политическая организация в Индии)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1889</span><div class="timeline-content"><b>II Интернационал</b> (международное объединение социалистических партий)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1899–1902</span><div class="timeline-content"><b>Англо-бурская война</b> (Британская империя против буров в Южной Африке)</div></div>
+</div></div>
+		
 	<!--НОВЕЙШЕЕ ВРЕМЯ-->
 	
-	<div class="tab-pane" id="34">
+	<div class="tab-pane fade" id="latest" role="tabpanel">
+		<div class="timeline">
+    <div class="timeline-item"><span class="timeline-date">1910–1917</span><div class="timeline-content"><b>Мексиканская революция</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1911–1912</span><div class="timeline-content"><b>Синьхайская революция</b> в Китае</div></div>
+    <div class="timeline-item"><span class="timeline-date">1912–1913</span><div class="timeline-content"><b>Балканские войны</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1914–1918</span><div class="timeline-content"><b>Первая мировая война</b> (Сараевский инцидент, распад четырех империй)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1918–1923</span><div class="timeline-content"><b>Кемалистская революция</b> в Турции</div></div>
+    <div class="timeline-item"><span class="timeline-date">1919–1921</span><div class="timeline-content"><b>Парижская мирная конференция</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1919</span><div class="timeline-content"><b>Лига Наций</b> (создание международной организации)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1921</span><div class="timeline-content"><b>Вашингтонская конференция</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1922</span><div class="timeline-content"><b>Фашисты в Италии</b> (приход Муссолини к власти)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1924</span><div class="timeline-content"><b>План Дауэса</b> (регулирование репараций Германии)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1925–1927</span><div class="timeline-content"><b>Великая революция в Китае</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1929–1933</span><div class="timeline-content"><b>Мировой экономический кризис</b> (Великая депрессия)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1933</span><div class="timeline-content"><b>Гитлер в Германии</b> (рейхсканцлер), «Новый курс» Рузвельта в США</div></div>
+    <div class="timeline-item"><span class="timeline-date">1936</span><div class="timeline-content"><b>Захват Эфиопии</b> Италией</div></div>
+    <div class="timeline-item"><span class="timeline-date">1937</span><div class="timeline-content"><b>Вторжение Японии в Китай</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1938</span><div class="timeline-content"><b>Аншлюс Австрии</b> Германией</div></div>
+    <div class="timeline-item"><span class="timeline-date">1939</span><div class="timeline-content"><b>Захват Чехословакии</b>, Пакт Молотова-Риббентропа (23 августа)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1939–1945</span><div class="timeline-content"><b>Вторая мировая война</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1941</span><div class="timeline-content"><b>Перл-Харбор</b> (вступление США в войну)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1943</span><div class="timeline-content"><b>Капитуляция Италии</b>, Тегеранская конференция</div></div>
+    <div class="timeline-item"><span class="timeline-date">1944</span><div class="timeline-content"><b>Высадка в Нормандии</b> (открытие Второго фронта)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1945</span><div class="timeline-content"><b>Ялтинская и Потсдамская конференции</b>, Атомная бомбардировка Японии, ООН, Нюрнбергский процесс</div></div>
+    <div class="timeline-item"><span class="timeline-date">1946–1949</span><div class="timeline-content"><b>Гражданская война в Китае</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1947</span><div class="timeline-content"><b>Доктрина Трумэна</b>, План Маршалла</div></div>
+    <div class="timeline-item"><span class="timeline-date">1949</span><div class="timeline-content"><b>Создание НАТО</b>, провозглашение КНР</div></div>
+    <div class="timeline-item"><span class="timeline-date">1950–1953</span><div class="timeline-content"><b>Война в Корее</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1955–1991</span><div class="timeline-content"><b>Организация Варшавского договора</b> (ОВД)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1957</span><div class="timeline-content"><b>Римский договор</b> (создание ЕЭС / Общего рынка)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1959</span><div class="timeline-content"><b>Победа революции на Кубе</b> (приход Фиделя Кастро)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1960</span><div class="timeline-content"><b>Год Африки</b> (независимость обрели 17 государств)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1961</span><div class="timeline-content"><b>Берлинская стена</b> (начало строительства)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1962</span><div class="timeline-content"><b>Карибский кризис</b> (пик холодной войны)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1965–1973</span><div class="timeline-content"><b>Война США во Вьетнаме</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1966–1976</span><div class="timeline-content"><b>Культурная революция</b> в Китае</div></div>
+    <div class="timeline-item"><span class="timeline-date">1968</span><div class="timeline-content"><b>Пражская весна</b> (лидер — Александр Дубчек)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1973–1975</span><div class="timeline-content"><b>Мировой экономический кризис</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1989–1991</span><div class="timeline-content"><b>Революции в Восточной Европе</b> (падение соцлагеря)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1990</span><div class="timeline-content"><b>Объединение Германии</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">1990–1991</span><div class="timeline-content"><b>Война в Персидском заливе</b> (операция «Буря в пустыне»)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1991</span><div class="timeline-content"><b>Маастрихтские соглашения</b> (создание Евросоюза)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1992–1997</span><div class="timeline-content"><b>Война в Боснии и Герцеговине</b> (этнические чистки)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1993</span><div class="timeline-content"><b>Распад Чехословакии</b> («Бархатный развод»)</div></div>
+    <div class="timeline-item"><span class="timeline-date">2000</span><div class="timeline-content"><b>«Бульдозерная революция»</b> в Югославии</div></div>
+    <div class="timeline-item"><span class="timeline-date">2001</span><div class="timeline-content"><b>Теракты 11 сентября</b>, начало войны против терроризма</div></div>
+    <div class="timeline-item"><span class="timeline-date">2002</span><div class="timeline-content"><b>Введение евро</b> в наличное обращение</div></div>
+    <div class="timeline-item"><span class="timeline-date">2004</span><div class="timeline-content"><b>Цунами в Индийском океане</b> (гуманитарная катастрофа)</div></div>
+    <div class="timeline-item"><span class="timeline-date">2007–2008</span><div class="timeline-content"><b>Мировой финансовый кризис</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">2010–2012</span><div class="timeline-content"><b>Арабская весна</b> (серия протестов на Ближнем Востоке)</div></div>
+    <div class="timeline-item"><span class="timeline-date">2011</span><div class="timeline-content"><b>Ликвидация Усамы бен Ладена</b></div></div>
+    <div class="timeline-item"><span class="timeline-date">2012</span><div class="timeline-content"><b>Бозон Хиггса</b> (открытие в CERN)</div></div>
+    <div class="timeline-item"><span class="timeline-date">2014</span><div class="timeline-content"><b>Крым и восток Украины</b> (начало затяжного конфликта)</div></div>
+    <div class="timeline-item"><span class="timeline-date">2020–2023</span><div class="timeline-content"><b>Пандемия COVID-19</b> и её последствия</div></div>
+    <div class="timeline-item"><span class="timeline-date">2020</span><div class="timeline-content"><b>Brexit</b> (выход Великобритании из ЕС)</div></div>
+    <div class="timeline-item"><span class="timeline-date">2021</span><div class="timeline-content"><b>Штурм Капитолия</b> в США</div></div>
+    <div class="timeline-item"><span class="timeline-date">2022–н.в.</span><div class="timeline-content"><b>Российско-украинская война</b> (полномасштабная эскалация)</div></div>
+</div>
 
-		<p></p><b>1910-1917</b> Мексиканская революция
-		<p></p><b>1911-1912</b> Синьханская революция в Китае
-		<p></p><b>1912-1913</b> Балканские войны
-		<p></p><b>1914-1918</b> Первая мировая война (28 июня - сараевский инцидент, прекратили своё существование четыре империи: Российская (Брестский мир), Австро-Венгерская, Османская и Германская)
-		<p></p><b>1918-1923</b> Кемалистская революция в Турции
-		<p></p><b>1919-1921</b> Парижская мирная конференция
-		<p></p><b>1919</b> Лига Наций
-		<p></p><b>1921</b> Вашингтонская конференция
-		<p></p><b>1922</b> Приход фашистов к власти в Италии
-		<p></p><b>1924</b> План Дауэса (установил новый порядок репарационных выплат Германией после Первой мировой войны по возможностям Веймарской республики)
-		<p></p><b>1925-1927</b> Национальная великая революция в Китае
-		<p></p><b>1929-1933</b> Мировой экономический кризис
-		<p></p><b>1933</b> Гитлер - канцлер Германии, курс Рузвельта в США
-		<p></p><b>1936</b> Захват Италией Эфиопии
-		<p></p><b>1937</b> Вторжение Японии в Китай
-		<p></p><b>1938</b> Аншлюс Германией Австрии
-		<p></p><b>1939</b> Захват Германией Чехословакии, 23 августа - пакт Молотова-Риббентропа
-		<p></p><b>1939-1945</b> Вторая мировая война
-		<p></p><b>1941</b> Атака Японии на Перл-Харбор
-		<p></p><b>1943</b> Капитуляция Италии, Тегеранская конференция антигитлеровской коалиции
-        <p></p><b>1944</b> Высадка англо-американских войск в Нормандии
-		<p></p><b>1945</b> Крымская (Ялтинская) и Берлинская (Постдамская) конференции антигитлеровской коалиции, Атомная бомбардировка США Хиросимы и Нагасаки, начало Нюрнбергского процесса, ООН
-		<p></p><b>1946-1949</b> Гражданская война в Китае
-		<p></p><b>1947</b> Доктрина Трумана (политика сдерживания СССР). План Маршалла (программа восстановления Европы)
-		<p></p><b>1949</b> НАТО, провозглашение КНР
-		<p></p><b>1950-1953</b> Война в Корее
-		<p></p><b>1955-1991</b> Организация Варшавского договора (ответ на присоединение ФРГ в НАТО)
-		<p></p><b>1957</b> Римский договор о создании общего рынка (ЕЭС)
-		<p></p><b>1959</b> Победа революции на Кубе
-		<p></p><b>1960</b> Год Африки (в течение года статус независимых обрели 17 африканских государств)
-		<p></p><b>1961</b> Берлинская стена
-		<p></p><b>1962</b> Карибский кризис
-		<p></p><b>1965-1973</b> Война США во Вьетнаме
-		<p></p><b>1966-1976</b> Культурная революция в Китае
-		<p></p><b>1968</b> Пражская весна. Лидер - Дубчек
-		<p></p><b>1973-1975</b> Мировой экономический кризис
-		<p></p><b>1989-1991</b> Революции в странах Восточной и Центральной Европы
-		<p></p><b>1990</b> Объединение Германии
-		<p></p><b>1990-1991</b> Агрессия Ирака против Кувейта. Буря в пустыне (многонациональная армия освободила Кувейт)
-		<p></p><b>1991</b> Маастрихтские соглашения о Евросоюзе
-		<p></p><b>1992-1997</b> Война и этнические чистки в Боснии и Герцеговине
-		<p></p><b>1993</b> Распад Чехословакии
-		<p></p><b>2000</b> Цветная революция в Югославии
-		<p></p><b>2001</b> Начало войны против мирового терроризма, выход США из договора ПРО, атаки 11 сентября
-		<p></p><b>2002</b> Введение "евро"
-		<p></p><b>2003-2011</b> Иракская война
-		<p></p><b>2008</b> Первый саммит Большой Двадцатки
-		<p></p><b>2008-2012</b> Мировой экономический кризис
-		<p></p><b>2010-2011</b> Арабская весна (перевороты в арабском мире)
+</div>
+
+
 		
-		</div>
 	
 	<!---КНИГИ-->
-	
-	    <div class="tab-pane" id="35">
-		<center><ul class="nav nav-tabs">
-  <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#36">Дo XIX в.</a></li>
-  <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#37">XIX в.</a></li>
-  <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#38">XX в.</a></li>
-  <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#29">Идиомы</a></li>
-</ul></center>
-<div class="tab-content">
 	
 	<!--ДРЕВНИЙ МИР-->
  
 	
-	<div class="tab-pane" id="36">
-	<p></p><b>VIII век до н. э.</b> Гомер - Илиада, Одиссея
-		<p></p><b>IV век до н. э.</b> Аристотель - Метафизика
-		<p></p><b>440 г. до н. э.</b> Геродот - История
-		<p></p><b>400-е до н. э.</b> Аристофан - Лягушки и тд.
-		<p></p><b>29-19 до н. э.</b> Вергилий "Энеида"
-		<p></p><b>VIII век</b> Беовульф
-		<p></p><b>XI век</b> Омар Хайям - Рубаи
-		<p></p><b>XII век</b> Слово о полку Игореве, Песнь о Роланде, Шота Руставели - Витязь в тигровой шкуре", Тристан и Изольда
-		<p></p><b>XIII век</b> Песнь о Нибелунгах, Старшая Эдда
-		<p></p><b>1307-1321</b> Данте Алигьери - Божественная комедия
-		<p></p><b>1352-1354</b> Джованни Бокаччо - Декамерон
-		<p></p><b>конец XIVв</b> Джеффри Чосер - Кентерберийские рассказы
-		<p></p><b>XV век</b> Томас Мэлори - Смерть Артура
-		<p></p><b>1504-1516</b> Леонардо да Винчи — Лестерский кодекс (Трактат о воде, земле и небесных телах)
-<p></p><b>1516</b> Томас Мор - Утопия
-		<p></p><b>1532</b> Никола Макиавелли - Государь
-		<p></p><b>1533-1564</b> Франсуа Рабле - Гаргантюа и Пантагрюэль
-		<p></p><b>1580</b> Мишель де Монтень — Опыты
-		<p></p><b>1588</b> Джордано Бруно — Сто шестьдесят тезисов против математиков и философов нашего времени
-<p></p><b>1592-1605</b> Уильям Шекспир - Ромео и Джульетта, Король Лир и тд.
-<p></p><b>1605</b> Френсис Бэкон — О достоинстве и приумножении наук
-<p></p><b>1615</b> Мигель Сервантес - Хитроумный идальго Дон Кихот Ламанчский
-		<p></p><b>1618</b> Лопе Де Вега - Собака на сене
-		<p></p><b>1632</b> Галилео Галилей — Диалог о двух главнейших системах мира — птолемеевой и коперниковой
-		<p></p><b>1635</b> Педро Кальдерон де ла Барка — Жизнь есть сон
-		<p></p><b>1642-1658</b> Томас Гоббс — Основы философии
-		<p></p><b>1657-1658</b> Блез Паскаль — Мысли
-<p></p><b>1667</b> Джон Мильтон - Потерянный рай
-<p></p><b>1677</b> Бенедикт Спиноза — Этика
-<p></p><b>1679</b> Мольер — Мещанин во дворянстве
-<p></p><b>1689</b> Джон Локк — Два трактата о государственном правлении
-<p></p><b>1697</b> Шарль Перро — Сказки Матушки Гусыни, Золушка	
-<p></p><b>1719</b> Даниэль Дефо - Робинзон Крузо		
-<p></p><b>1726</b> Джонатан Свифт — Путешествия Гулливера
-	<p></p><b>1731</b> Аббат Прево — Манон Леско
-	<p></p><b>середина XVIII века</b> Джакомо Казанова — Мемуары Казановы, венецианца
-	<p></p><b>1758</b> Вольтер — Кандид, или оптимизм
-	<p></p><b>1762</b> 	Карло Гоцци — Турандот, Король-олень
-<p></p><b>1774</b> Иоганн Вольфганг фон Гёте — Страдания юного Вертера, Фауст (1774-1831)
-	<p></p><b>1780</b> Дени Дидро — Монахиня
-	<p></p><b>1781</b> Иммануил Кант — Критика чистого разума
-	<p></p><b>1782</b> 	Денис Фонвизин — Недоросль, Шодерло де Лакло — Опасные связи
-<p></p><b>1786</b> Рудольф Эрих Распэ — Приключения барона Мюнхгаузена
-	<p></p><b>1791</b> Маркиз де Сад — Жюстина, или Несчастья добродетели
-	<p></p><b>1792</b> Николай Карамзин - Бедная Лиза
-	<p></p><b>1795</b> Александр Суворов — Наука побеждать
-<p></p><b>1795-1796</b> 	Иоганн Вольфганг фон Гёте — Годы учения Вильгельма Мейстера
-<p></p><b>1796-1797</b> Джейн Остин - Гордость и предубеждение
-	</div>
-	
-		<div class="tab-pane" id="37">
-			<p></p><b>1805-1844</b> Иван Крылов - Басни
-			<p></p><b>1812</b> Братья Гримм - Сказки
-			<p></p><b>1812</b>  Гегель - Наука логики
-			<p></p><b>1812—1818</b>  Джордж Гордон Байрон — Паломничество Чайльд-Гарольда
-			<p></p><b>1813-1873</b>  Федор Тютчев - Стихотворения
-			<p></p><b>1814</b> Джон Китс — Сонеты
-			<p></p><b>1816-1825</b> Николай Карамзин - История государства Российского
-			<p></p><b>1819</b> Вальтер Скотт - Айвенго
-	<p></p><b>1820-1837</b> Александр Пушкин - Руслан и Людмила (20), Борис Годунов (25), Евгений Онегин (25-37), Повести Белкина (31), Дубровский и Медный Всадник (33), Пиковая Дама (34), Капитанская дочка (36)
-			<p></p><b>1823</b> Мэри Шелли - Франкенштейн, или Современный Прометей
-			<p></p><b>1826-1841</b> Джеймс Фенимор Купер - Последний из Могикан (26), Следопыт, или На берегах Онтарио (40), Зверобой, или Первая тропа войны (41)
-			<p></p><b>1826-1828</b> Вильгельм Гауф - Сказки
-	<p></p><b>1828</b> Александр Грибоедов — Горе от ума
-			<p></p><b>1830</b> Стендаль - Красное и черное
-			1830-1847 Оноре де Бальзак - Гобсек (30), Шагреневая кожа (31), Отец Горио (34), Блеск и нищета куртизанок (38-47)
-<p></p><b>1831-1842</b> Николай Гоголь - Вечера на хуторе близ Диканьки (31-32), Петербургские повести в т.ч. Нос, Невский проспект, Записки сумасшедшего (32-42), Тарас Бульба (35), Вий (35), Ревизор (36), Мертвые души и Шинель (42)
-			<p></p><b>1831-1862</b> Виктор Гюго - Собор Парижской Богоматери, Человек, который смеется (60-е), Отверженные (62)
-			<p></p><b>1833-1849</b> Эдгар По - Рассказы (Падение дома Ашеров - 39, Убийство на улице Морг - 41, Золотой жук - 43)
-			<p></p><b>1834-1856</b> Петр Ершов - Конек-горбунок
-			<p></p><b>1837-1861</b> Чарльз Диккенс - Посмертные записки Пиквикского клуба (37), Приключения Оливера Твиста (38), Дэвид Копперфильд (50), Большие надежды (61)
-	<p></p><b>1835-1840</b> Михаил Лермонтов — Маскарад (35) Демон (29-39) Герой нашего времени, Мцыри (40)
-			<p></p><b>1839-1872</b> Ганс Христиан Андерсен - Сказки
-			<p></p><b>1843</b> Жорж Санд - Консуэло
-			<p></p><b>1843</b> Ажен Сю - Парижские тайны
-	<p></p><b>1844-1846</b> Александр Дюма — Три мушкетера, Граф Монте-Кристо, Королева Марго
-		<p></p><b>1845-1880</b>  Федор Достоевский - Бедные люди (45), Двойник (46), Униженные и оскорбленные (61), Преступление и наказание и Игрок (66), Идиот (68-69), Бесы (70-72), Братья Карамазовы (79-80)
-			<p></p><b>1847</b> Шарлотта Бронте - Джейн Эйр
-			<p></p><b>1847</b> Эмили Бронте - Грозовой перевал
-			<p></p><b>1848</b>  Уильям Теккерей - Ярмарка тщеславия
-			<p></p><b>1848</b> Александр Дюма (сын) - Дама с камелиями
-	<p></p><b>1848-1858</b> Иван Гончаров - Обломов
-			<p></p><b>1851</b> Герман Мелвилл — Моби Дик
-	<p></p><b>1852</b> Иван Тургенев - Муму, Записки охотника
-			<p></p><b>1852</b> Гарриет Бичер-Стоу — Хижина дяди Тома
-	<p></p><b>1852-1899</b> Лев Толстой - Детство.Отрочество.Юность (52-57), Война и мир (65-68), Кавказский пленник (72), Анна Каренина (73-77), Крейцерова соната (89), Воскресение (99)
-			<p></p><b>1856</b> Гюстав Флобер — Госпожа Бовари
-			<p></p><b>1857</b>  Шарль Бодлер - Цветы зла
-			<p></p><b>1858 </b>  Сергей Аксаков - Аленький цветочек
-				<p></p><b>1859 </b> Чарльз Дарвин - Происхождение видов
-			<p></p><b>1860-1878</b> Александр Островский — Гроза (60), Бесприданница (78)
-			<p></p><b>1861-1868</b> Владимир Даль - Толковый словарь живого великорусского языка, Пословицы и поговорки русского народа
-			<p></p><b>1863</b>  Николай Чернышевский - Что делать
-			<p></p><b>1864-1881</b> Николай Лесков - Леди Макбет Мценского уезда (64), Левша (81)
-			<p></p><b>1864-1871</b> Льюис Кэрролл - Алиса в Стране Чудес (64), Алиса в Зазеркалье (71). Прозвище Кэрролла - Додо (Доджсон, заикание)
-			<p></p><b>1866</b> Майн Рид - Всадник без головы
-			<p></p><b>1865-1878</b> Жюль Верн - Путешествие к центру Земли (65), Дети капитана Гранта (68), Двадцать тысяч лье под водой (69), Вокруг света за 80 дней (72), Таинственный остров (74), 15-летний капитан (78)
-			<p></p><b>1865-1876</b> Николай Некрасов — Кому на Руси жить хорошо
-			<p></p><b>1867</b>  Карл Маркс - Капитал
-			<p></p><b>1867</b> Шарль де Костер — Легенда об Уленшпигеле
-			<p></p><b>1867</b> Генрик Ибсен — Пер Гюнт
-			<p></p><b>1870</b> Михаил Салтыков-Щедрин — История одного города
-			<p></p><b>1872</b> Альфонс Доде - «Тартаре́н из Тараско́на»
-			<p></p><b>1873-1887</b> Эмиль Золя — Чрево Парижа (73), Дамское счастье (83) Жерминаль (85) Земля (87)
-<p></p><b>1874</b> Рафаэлло Джованьоли — Спартак
-			<p></p><b>1876-1889</b> Марк Твен - Приключения Тома Сойера (76), Принц и нищий (80), Приключения Гекльберри Финна (84), Янки из Коннектикута при дворе короля Артура (89)
-			<p></p><b>1878-1886</b> Роберт Льюис Стивенсон - Клуб самоубийц (78), Остров сокровищ (83), Странная история доктора Джекила и мистера Хайда (86)
-			<p></p><b>1880-1885</b> Ги Де Мопассан - Пышка (80), Милый друг (85)		
-<p></p><b>1883-1891</b>Так говорил Заратустра. Книга для всех и ни для кого
-			<p></p><b>1884-1896</b> Генрих Сенкевич - Крестоносцы (84), Камо грядеши (96)
-			<p></p><b>1885-1893</b> Генри Райдер Хаггард — Копи царя Соломона (85) Дочь Монтесумы (93)
-<p></p><b>1887-1927</b> Артур Конан Дойль — Приключения Шерлока Холмса (Этюд в багровых тонах - 1887, Собака Баскервилей - 1902)
-			<p></p><b>1887-1891</b> Оскар Уайльд - Кентервильское привидение (87), Саломея и Портрет Дориана Грея (91)
-			<p></p><b>1889</b> Джером К. Джером — Трое в лодке, не считая собаки
-<p></p><b>1890</b> Кнут Гамсун - Голод
-	<p></p><b>1892-1903</b> Антон Чехов — Палата № 6 (92), Дядя Ваня и Чайка (96) Ионыч (98) Дама с собачкой (99) Три сестры (00) Вишневый сад (03)
-	<p></p><b>1895-1897</b> Герберт Уэллс - Машина времени, Остров доктора Моро, Человек-невидимка, Война миров	
-			<p></p><b>1897</b>  Этель Лилиан Войнич — Овод
-			<p></p><b>1897</b> Эдмон Ростан — Сирано де Бержерак
-			<p></p><b>1897</b> Брэм Стокер — Дракула
+	<div class="tab-pane fade" id="lit-before" role="tabpanel">
+	<div class="timeline">
+    <!-- Античность -->
+    <div class="timeline-item"><span class="timeline-date">VIII в. до н. э.</span><div class="timeline-content"><b>Гомер</b> — «Илиада», «Одиссея»</div></div>
+    <div class="timeline-item"><span class="timeline-date">440 г. до н. э.</span><div class="timeline-content"><b>Геродот</b> — «История»</div></div>
+    <div class="timeline-item"><span class="timeline-date">IV в. до н. э.</span><div class="timeline-content"><b>Аристотель</b> — «Метафизика»</div></div>
+    <div class="timeline-item"><span class="timeline-date">400-е до н. э.</span><div class="timeline-content"><b>Аристофан</b> — «Лягушки», «Облака»</div></div>
+    <div class="timeline-item"><span class="timeline-date">29–19 до н. э.</span><div class="timeline-content"><b>Вергилий</b> — «Энеида»</div></div>
+
+    <!-- Средневековье -->
+    <div class="timeline-item"><span class="timeline-date">VIII в.</span><div class="timeline-content"><b>«Беовульф»</b> (англосаксонский эпос)</div></div>
+    <div class="timeline-item"><span class="timeline-date">XI в.</span><div class="timeline-content"><b>Омар Хайям</b> — «Рубаи»</div></div>
+    <div class="timeline-item"><span class="timeline-date">XII в.</span><div class="timeline-content"><b>«Слово о полку Игореве»</b>, «Песнь о Роланде», <b>Шота Руставели</b> — «Витязь в тигровой шкуре»</div></div>
+    <div class="timeline-item"><span class="timeline-date">XIII в.</span><div class="timeline-content"><b>«Песнь о Нибелунгах»</b>, «Старшая Эдда»</div></div>
+
+    <!-- Возрождение -->
+    <div class="timeline-item"><span class="timeline-date">1307–1321</span><div class="timeline-content"><b>Данте Алигьери</b> — «Божественная комедия»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1352–1354</span><div class="timeline-content"><b>Джованни Бокаччо</b> — «Декамерон»</div></div>
+    <div class="timeline-item"><span class="timeline-date">XV в.</span><div class="timeline-content"><b>Томас Мэлори</b> — «Смерть Артура»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1504–1516</span><div class="timeline-content"><b>Леонардо да Винчи</b> — «Лестерский кодекс»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1516</span><div class="timeline-content"><b>Томас Мор</b> — «Утопия»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1532</span><div class="timeline-content"><b>Никола Макиавелли</b> — «Государь»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1533–1564</span><div class="timeline-content"><b>Франсуа Рабле</b> — «Гаргантюа и Пантагрюэль»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1592–1605</span><div class="timeline-content"><b>Уильям Шекспир</b> — «Ромео и Джульетта», «Король Лир», «Гамлет»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1605</span><div class="timeline-content"><b>Мигель Сервантес</b> — «Дон Кихот»</div></div>
+
+    <!-- XVII - XVIII века -->
+    <div class="timeline-item"><span class="timeline-date">1632</span><div class="timeline-content"><b>Галилео Галилей</b> — «Диалог о двух системах мира»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1667</span><div class="timeline-content"><b>Джон Мильтон</b> — «Потерянный рай»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1679</span><div class="timeline-content"><b>Мольер</b> — «Мещанин во дворянстве»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1697</span><div class="timeline-content"><b>Шарль Перро</b> — «Золушка», «Сказки Матушки Гусыни»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1719</span><div class="timeline-content"><b>Даниэль Дефо</b> — «Робинзон Крузо»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1726</span><div class="timeline-content"><b>Джонатан Свифт</b> — «Путешествия Гулливера»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1774–1831</span><div class="timeline-content"><b>И. В. фон Гёте</b> — «Фауст», «Страдания юного Вертера»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1781</span><div class="timeline-content"><b>Иммануил Кант</b> — «Критика чистого разума»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1782</span><div class="timeline-content"><b>Денис Фонвизин</b> — «Недоросль»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1786</span><div class="timeline-content"><b>Р. Э. Распэ</b> — «Приключения барона Мюнхгаузена»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1792</span><div class="timeline-content"><b>Николай Карамзин</b> — «Бедная Лиза»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1795</span><div class="timeline-content"><b>Александр Суворов</b> — «Наука побеждать»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1796</span><div class="timeline-content"><b>Джейн Остин</b> — «Гордость и предубеждение»</div></div>
 </div>
 
+	</div>
+	
+		<div class="tab-pane fade" id="lit-19" role="tabpanel">
+			<div class="timeline">
+    <div class="timeline-item"><span class="timeline-date">1805–1844</span><div class="timeline-content"><b>Иван Крылов</b> — Басни</div></div>
+    <div class="timeline-item"><span class="timeline-date">1812</span><div class="timeline-content"><b>Братья Гримм</b> — Сказки; <b>Гегель</b> — «Наука логики»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1812–1818</span><div class="timeline-content"><b>Джордж Байрон</b> — «Паломничество Чайльд-Гарольда»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1813–1873</span><div class="timeline-content"><b>Федор Тютчев</b> — Стихотворения</div></div>
+    <div class="timeline-item"><span class="timeline-date">1816–1825</span><div class="timeline-content"><b>Николай Карамзин</b> — «История государства Российского»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1819</span><div class="timeline-content"><b>Вальтер Скотт</b> — «Айвенго»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1820–1837</span><div class="timeline-content"><b>Александр Пушкин</b> — «Руслан и Людмила», «Борис Годунов», «Евгений Онегин», «Повести Белкина», «Медный всадник», «Пиковая дама», «Капитанская дочка»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1823</span><div class="timeline-content"><b>Мэри Шелли</b> — «Франкенштейн»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1826–1841</span><div class="timeline-content"><b>Ф. Купер</b> — «Последний из могикан», «Следопыт», «Зверобой»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1828</span><div class="timeline-content"><b>Александр Грибоедов</b> — «Горе от ума»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1830</span><div class="timeline-content"><b>Стендаль</b> — «Красное и черное»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1830–1847</span><div class="timeline-content"><b>Оноре де Бальзак</b> — «Гобсек», «Шагреневая кожа», «Отец Горио», «Блеск и нищета куртизанок»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1831–1842</span><div class="timeline-content"><b>Николай Гоголь</b> — «Вечера на хуторе близ Диканьки», «Петербургские повести», «Тарас Бульба», «Ревизор», «Мертвые души», «Шинель»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1831–1862</span><div class="timeline-content"><b>Виктор Гюго</b> — «Собор Парижской Богоматери», «Отверженные», «Человек, который смеется»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1833–1849</span><div class="timeline-content"><b>Эдгар По</b> — Рассказы («Убийство на улице Морг», «Золотой жук»)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1834–1856</span><div class="timeline-content"><b>Петр Ершов</b> — «Конек-горбунок»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1835–1840</span><div class="timeline-content"><b>Михаил Лермонтов</b> — «Маскарад», «Демон», «Герой нашего времени», «Мцыри»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1837–1861</span><div class="timeline-content"><b>Чарльз Диккенс</b> — «Приключения Оливера Твиста», «Дэвид Копперфильд», «Большие надежды»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1839–1872</span><div class="timeline-content"><b>Г. Х. Андерсен</b> — Сказки</div></div>
+    <div class="timeline-item"><span class="timeline-date">1844–1846</span><div class="timeline-content"><b>Александр Дюма</b> — «Три мушкетера», «Граф Монте-Кристо», «Королева Марго»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1845–1880</span><div class="timeline-content"><b>Федор Достоевский</b> — «Бедные люди», «Униженные и оскорбленные», «Преступление и наказание», «Идиот», «Бесы», «Братья Карамазовы»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1847</span><div class="timeline-content"><b>Шарлотта Бронте</b> — «Джейн Эйр»; <b>Эмили Бронте</b> — «Грозовой перевал»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1848</span><div class="timeline-content"><b>Уильям Теккерей</b> — «Ярмарка тщеславия»; <b>Александр Дюма (сын)</b> — «Дама с камелиями»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1848–1858</span><div class="timeline-content"><b>Иван Гончаров</b> — «Обломов»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1851</span><div class="timeline-content"><b>Герман Мелвилл</b> — «Моби Дик»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1852</span><div class="timeline-content"><b>Иван Тургенев</b> — «Муму», «Записки охотника»; <b>Гарриет Бичер-Стоу</b> — «Хижина дяди Тома»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1852–1899</span><div class="timeline-content"><b>Лев Толстой</b> — «Детство. Отрочество. Юность», «Война и мир», «Кавказский пленник», «Анна Каренина», «Крейцерова соната», «Воскресение»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1856</span><div class="timeline-content"><b>Гюстав Флобер</b> — «Госпожа Бовари»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1857</span><div class="timeline-content"><b>Шарль Бодлер</b> — «Цветы зла»; <b>Чарльз Дарвин</b> — «Происхождение видов» (1859)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1858</span><div class="timeline-content"><b>Сергей Аксаков</b> — «Аленький цветочек»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1860–1878</span><div class="timeline-content"><b>Александр Островский</b> — «Гроза», «Бесприданница»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1861–1868</span><div class="timeline-content"><b>Владимир Даль</b> — «Толковый словарь живого великорусского языка»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1863</span><div class="timeline-content"><b>Николай Чернышевский</b> — «Что делать?»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1864–1881</span><div class="timeline-content"><b>Николай Лесков</b> — «Леди Макбет Мценского уезда», «Левша»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1864–1871</span><div class="timeline-content"><b>Льюис Кэрролл</b> — «Алиса в Стране чудес», «Алиса в Зазеркалье»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1866</span><div class="timeline-content"><b>Майн Рид</b> — «Всадник без головы»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1865–1878</span><div class="timeline-content"><b>Жюль Верн</b> — «Дети капитана Гранта», «20 000 лье под водой», «Вокруг света за 80 дней», «Таинственный остров», «Пятнадцатилетний капитан»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1867</span><div class="timeline-content"><b>Карл Маркс</b> — «Капитал»; <b>Генрик Ибсен</b> — «Пер Гюнт»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1870</span><div class="timeline-content"><b>Михаил Салтыков-Щедрин</b> — «История одного города»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1873–1887</span><div class="timeline-content"><b>Эмиль Золя</b> — «Чрево Парижа», «Дамское счастье», «Жерминаль»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1876–1889</span><div class="timeline-content"><b>Марк Твен</b> — «Приключения Тома Сойера», «Принц и нищий», «Приключения Гекльберри Финна»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1878–1886</span><div class="timeline-content"><b>Р. Л. Стивенсон</b> — «Остров сокровищ», «Странная история доктора Джекила и мистера Хайда»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1880–1885</span><div class="timeline-content"><b>Ги де Мопассан</b> — «Пышка», «Милый друг»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1883</span><div class="timeline-content"><b>Фридрих Ницше</b> — «Так говорил Заратустра»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1887–1927</span><div class="timeline-content"><b>Артур Конан Дойл</b> — «Приключения Шерлока Холмса» («Этюд в багровых тонах», «Собака Баскервилей»)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1887–1891</span><div class="timeline-content"><b>Оскар Уайльд</b> — «Кентервильское привидение», «Портрет Дориана Грея»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1889</span><div class="timeline-content"><b>Джером К. Джером</b> — «Трое в лодке, не считая собаки»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1892–1903</span><div class="timeline-content"><b>Антон Чехов</b> — «Палата № 6», «Чайка», «Дама с собачкой», «Три сестры», «Вишневый сад»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1895–1897</span><div class="timeline-content"><b>Герберт Уэллс</b> — «Машина времени», «Человек-невидимка», «Война миров»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1897</span><div class="timeline-content"><b>Брэм Стокер</b> — «Дракула»; <b>Э. Л. Войнич</b> — «Овод»</div></div>
 
-		<div class="tab-pane" id="38">
-	<p></p><b>1900</b> Лаймен Фрэнк Баум — Удивительный волшебник из страны Оз
-			<p></p><b>1900-1925</b> Теодор Драйзер - Сестра Керри (00) Дженни Герхардт (11) Трилогия желания (12-47) Финансист (12) Гений (15) Американская трагедия (25) 
-				<p></p><b>1901-1921</b> Александр Блок — Стихотворения (12-1918)
-<p></p><b>1901-1936</b> Максим Горький - Старуха Изергиль (1894), На дне (01), Мать (06), Жизнь Клима Самгина (24-36)
-	<p></p><b>1901-1936</b> Александр Куприн - Олеся (1898), Поединок (05), Гранатовый браслет (10), Яма (09-15)
-	<p></p><b>1901-1947</b> Томас Манн - Будденброки (01) Смерть в Венеции (12) Волшебная гора (24) Доктор Фаустус (47)
-				<p></p><b>1904-1910</b> О.Генри - Рассказы
-	<p></p><b>1904-1920</b> Джек Лондон - Морской волк (04) Белый Клык (06) Дорога (07) Мартин Иден (09) Сердца трех (20)
-			<p></p><b>1906</b> Сельма Лагерлёф — Чудесное путешествие Нильса с дикими гусями
-			<p></p><b>1906-1941</b> Марина Цветаева - Лирика
-			<p></p><b>1906-1921</b> Джон Голсуорси — Сага о Форсайтах
-			<p></p><b>1908</b> Морис Метерлинк — Синяя Птица
-			<p></p><b>1909</b> Леонид Андреев — Рассказ о семи повешенных (Иуда Искариот - 1907)
-			<p></p><b>1910-1925</b> Сергей Есенин - Стихотворения
-			<p></p><b>1912-1922</b> Франц Кафка - Превращение (12) Процесс (15) Замок (22)
-	<p></p><b>1913</b> Бернард Шоу - Пигмалион
-			<p></p><b>1913</b> Марсель Пруст — В поисках утраченного времени
-			<p></p><b>1914—1927</b> Рюноскэ Акутагава — Новеллы
-			<p></p><b>1915—1928</b> Владимир Маяковский - Облако в штанах (15) Клоп (28)
-			<p></p><b>1915—1937</b> Сомерсет Моэм - Бремя страстей человеческих (15) Луна и грош (19) Театр (37)
-			<p></p><b>1915—1938</b> Иван Бунин - Господин из Сан-Франциско (15) Лёгкое дыхание (16) Окаянные дни (18) Митина любовь (24) Тёмные аллеи (38)
-			<p></p><b>1916—1922</b> Александр Грин - Алые паруса
-				<p></p><b>1920</b> Евгений Замятин — Мы
-			<p></p><b>1920</b> Джеймс Джойс - Улисс
-			<p></p><b>1920—1934</b> Фрэнсис Скотт Фицджеральд - По эту сторону рая (20) Загадочная история Бенджамина Баттона (21) Великий Гэтсби (25) Ночь нежна (34)
-			<p></p><b>1922</b> Рафаэль Сабатини — Одиссея Капитана Блада
-			<p></p><b>1922</b> Решад Нури Гюнтекин — Королёк — птичка певчая
-			<p></p><b>1922—1931</b> Герман Гессе - Сиддхартха (22) Степной волк (27) Игра в бисер (31) 
-			<p></p><b>1922-1958</b> Михаил Зощенко - Рассказы
-			<p></p><b>1923</b> Ярослав Гашек — Похождения бравого солдата Швейка во время мировой войны
-			<p></p><b>1923-1933</b> Корней Чуковский - Мойдодыр (23) Доктор Айболит (29) От двух до пяти (33)
-<p></p><b>1923-1936</b> Алексей Толстой - Аэлита (23), Гиперболоид инженера Гарина (27), Петр Первый (29-45), Хождение по мукам (22-41), Золотой ключик, или Приключения Буратино (35)
-			<p></p><b>1923-1961</b> Агата Кристи - Убийство на поле для гольфа (23) Убийство Роджера Экройда (26) Загадка Эндхауза (32) Убийство в «Восточном экспрессе» (34) Десять негритят (39) Подвиги Геракла (47) Кривой домишко (49) Вилла «Белый Конь» (61) 
-			<p></p><b>1924</b>  Владимир Обручев - Земля Санникова
-				<p></p><b>1924</b> Алан Александр Милн — Винни-Пух
-<p></p><b>1924-1940</b> Михаил Булгаков - Роковые яйца и Белая гвардия (24), Собачье сердце (25), Записки юного врача и Бег и Морфий (26), Записки покойника и Иван Васильевич (36), Мастер и Маргарита (29-40)
-			<p></p><b>1925-1928</b> Александр Беляев - Голова профессора Доуэля (25) Человек-амфибия (28)
-				<p></p><b>1926-1969</b> Михаил Шолохов Тихий Дон (26-40) Поднятая целина (30-59) Судьба человека (57) Они сражались за Родину (69) 
-			<p></p><b>1926-1930</b> Андрей Платонов — Чевенгур (26) Котлован (30)
-			<p></p><b>1928</b> Дэвид Лоуренс — Любовник леди Чаттерли
-			<p></p><b>1928-1931</b> Лев Кассиль — Кондуит и Швамбрания
-			<p></p><b>1928-1937</b>  Ильф и Петров - 12 стульев (28), Золотой теленок (31), Одноэтажная Америка (37)
-			<p></p><b>1929</b> Уильям Фолкнер - Шум и ярость
-	<p></p><b>1929-1956</b> Эрих Мария Ремарк - На западном фронте без перемен (29) Три товарища (36) Триумфальная арка (45) Черный обелиск (56)
-	<p></p><b>1929-1964</b> Эрнест Хемингуэй - Прощай, оружие! (29) По ком звонит колокол (40) Старик и море (52) Праздник, который всегда с тобой (64)
-			<p></p><b>1930-1962</b> Владимир Набоков - Защита Лужина (30) Камера обскура (32) Приглашение на казнь (36) Дар (38) Лолита (55) Пнин (57) Бледное пламя (62)
-				<p></p><b>1931</b> Антон Макаренко — Педагогическая поэма
-<p></p><b>1932</b> Олдос Хаксли — О дивный новый мир
-			<p></p><b>1933-1940</b> Аркадий Гайдар - Сказка о Военной тайне, о Мальчише-Кибальчише и его твёрдом слове (33) Военная тайна (35) Судьба барабанщика (38) Чук и Гек (39) Тимур и его команда (40)
-			<p></p><b>1935-1940</b> Анна Ахматова - Реквием
-			<p></p><b>1936-1948</b> Валентин Катаев - Белеет парус одинокий (36) Сын полка (45) Цветик-семицветик (48)
-			<p></p><b>1936</b> Маргарет Митчелл — Унесённые ветром
-			<p></p><b>1936-1950</b> Павел Бажов - Уральские сказы
-			<p></p><b>1936-1956</b> Евгений Шварц - Голый король (36) Сказка о потерянном времени (40) Дракон (44) Обыкновенное чудо (56)
-			<p></p><b>1937</b> Андрей Некрасов — Приключения капитана Врунгеля
-			<p></p><b>1937</b> Ян Ларри — Необыкновенные приключения Карика и Вали
-			<p></p><b>1937-1939</b> Джон Стейнбек - О мышах и людях (37) Гроздья гнева (39)
-			<p></p><b>1937-1955</b> Джон Толкиен - Хоббит, или Туда и обратно (37) Властелин колец (55)
-			<p></p><b>1938</b> Лазарь Лагин — Старик Хоттабыч
-			<p></p><b>1938-1944</b> Вениамин Каверин - Два капитана
-			<p></p><b>1939-1970</b> Александр Волков — Волшебник Изумрудного города (39) Урфин Джюс и его деревянные солдаты (63) Семь подземных королей (64) Огненный бог Марранов (68) Жёлтый Туман (70)
-			<p></p><b>1942</b> Антуан де Сент-Экзюпери — Маленький принц
-			<p></p><b>1942-1945</b> Александр Твардовский — Василий Тёркин
-			<p></p><b>1942-1947</b> Альбер Камю — Посторонний (42) Чума (47) 
-			<p></p><b>1945-1955</b> Борис Пастернак - Доктор Живаго
-			<p></p><b>1945-1955</b> Астрид Линдгрен - Пеппи Длинный чулок (45) Калле Блюмквист (46) Малыш и Карлсон, который живёт на крыше (55)
-			<p></p><b>1945-1970</b> Туве Янссон - Цикл о муми-троллях
-			<p></p><b>1945-1948</b> Джордж Оруэлл — Скотный двор (45) 1984 (48)
-			<p></p><b>1946</b> Борис Полевой — Повесть о настоящем человеке
-			<p></p><b>1947-1970</b> Анатолий Рыбаков - Кортик (47) Бронзовая птица (56) Дети Арбата (60-е)
-			<p></p><b>1950</b> Юкио Мисима - Исповедь маски и Золотой храм
-			<p></p><b>1950</b> Айзек Азимов - Я,робот 
-			<p></p><b>1950-1957</b> Рэй Бредбери - Марсианские хроники (50) И грянул гром (52) 451 градус по Фаренгейту (53) Вино из одуванчиков (57)
-			<p></p><b>1950-1956</b> Клайв Льюис — Хроники Нарнии
-			<p></p><b>1950-1959</b> Василий Гроссман — Жизнь и судьба
-			<p></p><b>1951</b> Джером Д. Сэлинджер — Над пропастью во ржи
-			<p></p><b>1951-1966</b> Труман Капоте - Голоса травы (51) Завтрак у Тиффани (58) Хладнокровное убийство (66)
-			<p></p><b>1952-1973</b> Курт Воннегут - Механическое пианино (52) Сирены Титана (59) Колыбель для кошки (63) Бойня номер пять, или Крестовый поход детей (69) Завтрак для чемпионов, или Прощай, Черный понедельник! (73)
-			<p></p><b>1954</b> Уильям Голдинг - Повелитель мух
-			<p></p><b>1954-1962</b> Варлам Шаламов - Колымские рассказы
-			<p></p><b>1954-1965</b> Николай Носов - Приключения Незнайки и его друзей (54) Незнайка в Солнечном городе (58) Незнайка на Луне (65) 
-			<p></p><b>1955-1966</b> Александр Солженицын — В круге первом (55-58) Архипелаг ГУЛАГ (58-67) Один день Ивана Денисовича и Матренин двор (59) Раковый корпус (63-66)
-			<p></p><b>1957</b> Джанни Родари — Приключения Чиполлино
-			<p></p><b>1958-1974</b> Василий Шукшин - Рассказы (Калина красная - 73)
-			<p></p><b>1959-1971</b> Константин Симонов - Живые и мертвые
-			<p></p><b>1959</b> Дэниел Киз — Цветы для Элджернона
-			<p></p><b>1959-1972</b> Виктор Драгунский - Денискины рассказы
-			<p></p><b>1959-1982</b> Василь Быков - Журавлиный крик (59) Третья ракета (62) Альпийская баллада (63) Сотников (70) Обелиск (71) Знак беды (82)
-			<p></p><b>1960</b> Харпер Ли - Убить пересмешника
-			<p></p><b>1961</b> Станислав Лем - Солярис
-			<p></p><b>1961-1985</b> Габриэль Гарсиа Маркес - Полковнику никто не пишет (61) Сто лет одиночества (67) Любовь во время холеры (85)
-			<p></p><b>1962</b> Кен Кизи — Пролетая над гнездом кукушки
-			<p></p><b>1962-1964</b> Кобо Абэ — Чужое лицо (62) Женщина в песках (64)
-			<p></p><b>1963</b> Анатолий Иванов — Тени исчезают в полдень
-			<p></p><b>1963-1969</b> Джон Фаулз - Коллекционер (63) Волхв (66) Любовница французского лейтенанта (69)
-			<p></p><b>1963-1986</b> Аркадий и Борис Стругацкие - Трудно быть богом (63) Понедельник начинается в субботу (65) Улитка на склоне (68) Обитаемый остров (69) Пикник на обочине (72) Град обреченный (75) Жук в муравейнике (79) Волны гасят ветер (86)
-			<p></p><b>1964</b> Роальд Даль — Чарли и шоколадная фабрика
-			<p></p><b>1965</b> Вадим Кожевников — Щит и меч
-			<p></p><b>1965-2003</b> Кир Булычев - Приключения Алисы
-			<p></p><b>1966</b> Фазиль Искандер — Сандро из Чегема
-			<p></p><b>1966-1974</b> Эдуард Успенский - Крокодил Гена и его друзья (66) Дядя Фёдор, пёс и кот (74)
-			<p></p><b>1968</b> Артур Хейли — Аэропорт
-	<p></p><b>1969</b> Борис Васильев - А зори здесь тихие
-			<p></p><b>1969</b> Ирвинг Шоу - Богач, бедняк
-			<p></p><b>1969</b> Марио Пьюзо — Крёстный отец
-			<p></p><b>1969</b> Юлиан Семенов — Семнадцать мгновений весны
-	<p></p><b>1970</b> Александр Вампилов - Утиная охота
-			<p></p><b>1970</b> Ричард Бах — Чайка по имени Джонатан Ливингстон				
-<p></p><b>1970</b> Венедикт Ерофеев — Москва-Петушки
-			<p></p><b>1970-1991</b> Роджер Желязны - Хроники Амбера
-			<p></p><b>1972-1976</b> Братья Вайнеры - Визит к Минотавру (72) Гонки по вертикали (74) Эра милосердия (76)
-			<p></p><b>1974</b> Валентин Пикуль - Слово и дело
-			<p></p><b>1974</b> Валентин Распутин - Уроки французского, Живи и помни
-			<p></p><b>1974-2014</b> Стивен Кинг - Кэрри (74) Сияние (77) Ярость (77) Противостояние (78) Куджо (81)  Рита Хейуорт или Побег из Шоушенка (82) Темная башня (82-2012) Бегущий человек (82) Кладбище домашних животных (83) Оно (86) Мизери (87) Лангольеры (90) Долорес Клейборн (92) Зеленая миля (96) Безнадёга (96) Сердца в Атлантиде (99) Под куполом (2009) 11/22/63 (2011) Доктор Сон (2013) Мистер Мерседес (2014) 
-			<p></p><b>1975</b> Джеймс Клавелл — Сегун
-			<p></p><b>1977</b> Колин Маккалоу — Поющие в терновнике
-			<p></p><b>1977</b> Чингиз Айтматов - Пегий пёс, бегущий краем моря
-			<p></p><b>1979</b> Дуглас Адамс — Автостопом по галактике
-			<p></p><b>1980-1988</b> Умберто Эко - Имя розы (80) Маятник Фуко (88)
-			<p></p><b>1981</b> Владимир Железников — Чучело
-			<p></p><b>1982-2009</b> Харуки Мураками - Охота на овец (82) Страна Чудес без тормозов и Конец Света (85) Норвежский лес (87) Дэнс, дэнс, дэнс (88) Хроники Заводной Птицы (92) Мой любимый sputnik (99) Кафка на пляже (2002) 1Q84 (2009)
-			<p></p><b>1983-2014</b> Терри Пратчетт — Плоский мир
-			<p></p><b>1984</b> Милан Кундера — Невыносимая легкость бытия
-			<p></p><b>1985</b> Леонид Филатов — Про Федота-стрельца, удалого молодца
-			<p></p><b>1985</b> Патрик Зюскинд — Парфюмер. История одного убийцы
-	<p></p><b>1988</b> Пауло Коэльо — Алхимик
-			<p></p><b>1988</b> Томас Харрис — Молчание ягнят
-<p></p><b>1990-1998</b> Анджей Сапковский — Цикл произведений о Ведьмаке
-			<p></p><b>1995</b> Павел Санаев — Похороните меня за плинтусом
-			<p></p><b>1997</b> Артур Голден — Мемуары гейши
-	<p></p><b>1997-2007</b> Джоан Роулинг — Серия книг о Гарри Поттере
-				<p></p><b>1998-2009</b> Борис Акунин — Приключения Эраста Фандорина
-			</div>
+
+</div></div>
+
+		
+
+
+
+		<div class="tab-pane fade" id="lit-20" role="tabpanel">
+			<div class="timeline">
+    <div class="timeline-item"><span class="timeline-date">1900</span><div class="timeline-content"><b>Л. Фрэнк Баум</b> — «Удивительный волшебник из страны Оз»; <b>Теодор Драйзер</b> — «Сестра Керри», «Финансист», «Американская трагедия»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1901–1921</span><div class="timeline-content"><b>Александр Блок</b> — Стихотворения, «Двенадцать»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1901–1936</span><div class="timeline-content"><b>Максим Горький</b> — «На дне», «Мать», «Жизнь Клима Самгина»; <b>Александр Куприн</b> — «Поединок», «Гранатовый браслет», «Яма»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1901–1947</span><div class="timeline-content"><b>Томас Манн</b> — «Будденброки», «Волшебная гора», «Доктор Фаустус»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1904–1910</span><div class="timeline-content"><b>О. Генри</b> — Рассказы</div></div>
+    <div class="timeline-item"><span class="timeline-date">1904–1920</span><div class="timeline-content"><b>Джек Лондон</b> — «Морской волк», «Белый Клык», «Мартин Иден», «Сердца трех»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1906–1941</span><div class="timeline-content"><b>Марина Цветаева</b> — Лирика; <b>Джон Голсуорси</b> — «Сага о Форсайтах»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1908–1909</span><div class="timeline-content"><b>Морис Метерлинк</b> — «Синяя Птица»; <b>Леонид Андреев</b> — «Рассказ о семи повешенных»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1910–1925</span><div class="timeline-content"><b>Сергей Есенин</b> — Стихотворения</div></div>
+    <div class="timeline-item"><span class="timeline-date">1912–1922</span><div class="timeline-content"><b>Франц Кафка</b> — «Превращение», «Процесс», «Замок»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1913</span><div class="timeline-content"><b>Бернард Шоу</b> — «Пигмалион»; <b>Марсель Пруст</b> — «В поисках утраченного времени»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1915–1937</span><div class="timeline-content"><b>Сомерсет Моэм</b> — «Бремя страстей человеческих», «Театр»; <b>Иван Бунин</b> — «Господин из Сан-Франциско», «Тёмные аллеи»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1915–1928</span><div class="timeline-content"><b>Владимир Маяковский</b> — «Облако в штанах», «Клоп»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1916–1922</span><div class="timeline-content"><b>Александр Грин</b> — «Алые паруса»; <b>Евгений Замятин</b> — «Мы» (1920)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1920–1934</span><div class="timeline-content"><b>Ф. С. Фицджеральд</b> — «Великий Гэтсби», «Ночь нежна»; <b>Джеймс Джойс</b> — «Улисс»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1922–1931</span><div class="timeline-content"><b>Герман Гессе</b> — «Сиддхартха», «Степной волк», «Игра в бисер»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1922–1958</span><div class="timeline-content"><b>Михаил Зощенко</b> — Рассказы; <b>Р. Сабатини</b> — «Одиссея капитана Блада»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1923</span><div class="timeline-content"><b>Ярослав Гашек</b> — «Похождения бравого солдата Швейка»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1923–1936</span><div class="timeline-content"><b>Алексей Толстой</b> — «Аэлита», «Гиперболоид инженера Гарина», «Пётр Первый», «Золотой ключик»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1923–1961</span><div class="timeline-content"><b>Агата Кристи</b> — «Убийство в Восточном экспрессе», «Десять негритят», «Кривой домишко»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1924–1940</span><div class="timeline-content"><b>Михаил Булгаков</b> — «Белая гвардия», «Собачье сердце», «Мастер и Маргарита»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1924</span><div class="timeline-content"><b>А. А. Милн</b> — «Винни-Пух»; <b>Владимир Обручев</b> — «Земля Санникова»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1925–1928</span><div class="timeline-content"><b>Александр Беляев</b> — «Голова профессора Доуэля», «Человек-амфибия»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1926–1969</span><div class="timeline-content"><b>Михаил Шолохов</b> — «Тихий Дон», «Поднятая целина», «Судьба человека», «Они сражались за Родину»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1926–1930</span><div class="timeline-content"><b>Андрей Платонов</b> — «Чевенгур», «Котлован»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1928</span><div class="timeline-content"><b>Дэвид Лоуренс</b> — «Любовник леди Чаттерли»; <b>Лев Кассиль</b> — «Кондуит и Швамбрания» (1928–1931)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1928–1937</span><div class="timeline-content"><b>Ильф и Петров</b> — «12 стульев», «Золотой теленок», «Одноэтажная Америка»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1929</span><div class="timeline-content"><b>Уильям Фолкнер</b> — «Шум и ярость»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1929–1956</span><div class="timeline-content"><b>Эрих Мария Ремарк</b> — «На Западном фронте без перемен», «Три товарища», «Триумфальная арка», «Черный обелиск»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1929–1964</span><div class="timeline-content"><b>Эрнест Хемингуэй</b> — «Прощай, оружие!», «По ком звонит колокол», «Старик и море», «Праздник, который всегда с тобой»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1930–1962</span><div class="timeline-content"><b>Владимир Набоков</b> — «Защита Лужина», «Приглашение на казнь», «Дар», «Лолита», «Пнин», «Бледное пламя»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1931–1932</span><div class="timeline-content"><b>Антон Макаренко</b> — «Педагогическая поэма»; <b>Олдос Хаксли</b> — «О дивный новый мир»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1933–1940</span><div class="timeline-content"><b>Аркадий Гайдар</b> — «Сказка о Мальчише-Кибальчише», «Судьба барабанщика», «Чук и Гек», «Тимур и его команда»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1935–1940</span><div class="timeline-content"><b>Анна Ахматова</b> — «Реквием»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1936</span><div class="timeline-content"><b>Маргарет Митчелл</b> — «Унесённые ветром»; <b>Валентин Катаев</b> — «Белеет парус одинокий», «Сын полка»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1936–1956</span><div class="timeline-content"><b>Евгений Шварц</b> — «Голый король», «Тень», «Дракон», «Обыкновенное чудо»; <b>Павел Бажов</b> — «Уральские сказы»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1937</span><div class="timeline-content"><b>Андрей Некрасов</b> — «Приключения капитана Врунгеля»; <b>Ян Ларри</b> — «Необыкновенные приключения Карика и Вали»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1937–1939</span><div class="timeline-content"><b>Джон Стейнбек</b> — «О мышах и людях», «Гроздья гнева»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1937–1955</span><div class="timeline-content"><b>Джон Толкин</b> — «Хоббит, или Туда и обратно», «Властелин колец»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1938–1944</span><div class="timeline-content"><b>Лазарь Лагин</b> — «Старик Хоттабыч»; <b>Вениамин Каверин</b> — «Два капитана»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1939–1970</span><div class="timeline-content"><b>Александр Волков</b> — «Волшебник Изумрудного города», «Урфин Джюс», «Семь подземных королей»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1942</span><div class="timeline-content"><b>Антуан де Сент-Экзюпери</b> — «Маленький принц»; <b>А. Твардовский</b> — «Василий Тёркин» (42–45)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1942–1947</span><div class="timeline-content"><b>Альбер Камю</b> — «Посторонний», «Чума»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1945–1955</span><div class="timeline-content"><b>Борис Пастернак</b> — «Доктор Живаго»; <b>Астрид Линдгрен</b> — «Пеппи Длинныйчулок», «Малыш и Карлсон»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1945–1970</span><div class="timeline-content"><b>Туве Янссон</b> — Цикл о муми-троллях; <b>Джордж Оруэлл</b> — «Скотный двор» (45), «1984» (48)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1946–1947</span><div class="timeline-content"><b>Борис Полевой</b> — «Повесть о настоящем человеке»; <b>Анатолий Рыбаков</b> — «Кортик», «Бронзовая птица»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1950–1957</span><div class="timeline-content"><b>Рэй Брэдбери</b> — «Марсианские хроники», «451 градус по Фаренгейту», «Вино из одуванчиков»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1950</span><div class="timeline-content"><b>Айзек Азимов</b> — «Я, робот»; <b>Юкио Мисима</b> — «Золотой храм»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1950–1956</span><div class="timeline-content"><b>Клайв Льюис</b> — «Хроники Нарнии»; <b>Василий Гроссман</b> — «Жизнь и судьба» (50–59)</div></div>
+    <div class="timeline-item"><span class="timeline-date">1951–1966</span><div class="timeline-content"><b>Дж. Сэлинджер</b> — «Над пропастью во ржи»; <b>Труман Капоте</b> — «Завтрак у Тиффани», «Хладнокровное убийство»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1952–1973</span><div class="timeline-content"><b>Курт Воннегут</b> — «Колыбель для кошки», «Бойня номер пять»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1954–1965</span><div class="timeline-content"><b>Николай Носов</b> — Трилогия о Незнайке; <b>Уильям Голдинг</b> — «Повелитель мух»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1955–1966</span><div class="timeline-content"><b>Александр Солженицын</b> — «В круге первом», «Архипелаг ГУЛАГ», «Один день Ивана Денисовича»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1957–1959</span><div class="timeline-content"><b>Джанни Родари</b> — «Приключения Чиполлино»; <b>Дэниел Киз</b> — «Цветы для Элджернона»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1959–1982</span><div class="timeline-content"><b>Василь Быков</b> — «Альпийская баллада», «Сотников»; <b>Виктор Драгунский</b> — «Денискины рассказы»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1960–1961</span><div class="timeline-content"><b>Харпер Ли</b> — «Убить пересмешника»; <b>Станислав Лем</b> — «Солярис»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1961–1985</span><div class="timeline-content"><b>Габриэль Гарсиа Маркес</b> — «Сто лет одиночества», «Любовь во время холеры»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1962–1964</span><div class="timeline-content"><b>Кен Кизи</b> — «Пролетая над гнездом кукушки»; <b>Кобо Абэ</b> — «Женщина в песках»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1963–1986</span><div class="timeline-content"><b>Братья Стругацкие</b> — «Трудно быть богом», «Понедельник начинается в субботу», «Пикник на обочине»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1963–1969</span><div class="timeline-content"><b>Джон Фаулз</b> — «Коллекционер», «Волхв», «Любовница французского лейтенанта»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1964–1965</span><div class="timeline-content"><b>Роальд Даль</b> — «Чарли и шоколадная фабрика»; <b>Вадим Кожевников</b> — «Щит и меч»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1965–2003</span><div class="timeline-content"><b>Кир Булычев</b> — Цикл «Приключения Алисы»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1966–1974</span><div class="timeline-content"><b>Фазиль Искандер</b> — «Сандро из Чегема»; <b>Эдуард Успенский</b> — «Крокодил Гена», «Дядя Фёдор, пёс и кот»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1968</span><div class="timeline-content"><b>Артур Хейли</b> — «Аэропорт»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1969</span><div class="timeline-content"><b>Борис Васильев</b> — «А зори здесь тихие»; <b>Марио Пьюзо</b> — «Крёстный отец»; <b>Юлиан Семенов</b> — «Семнадцать мгновений весны»; <b>Ирвинг Шоу</b> — «Богач, бедняк»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1970</span><div class="timeline-content"><b>Венедикт Ерофеев</b> — «Москва-Петушки»; <b>Ричард Бах</b> — «Чайка по имени Джонатан Ливингстон»; <b>Александр Вампилов</b> — «Утиная охота»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1970–1991</span><div class="timeline-content"><b>Роджер Желязны</b> — Цикл «Хроники Амбера»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1972–1976</span><div class="timeline-content"><b>Братья Вайнеры</b> — «Визит к Минотавру», «Эра милосердия»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1974</span><div class="timeline-content"><b>Валентин Пикуль</b> — «Слово и дело»; <b>Валентин Распутин</b> — «Живи и помни»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1974–2014</span><div class="timeline-content"><b>Стивен Кинг</b> — «Кэрри», «Сияние», «Противостояние», «Побег из Шоушенка», «Оно», «Зеленая миля», «11/22/63»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1975–1977</span><div class="timeline-content"><b>Джеймс Клавелл</b> — «Сёгун»; <b>Колин Маккалоу</b> — «Поющие в терновнике»; <b>Чингиз Айтматов</b> — «Пегий пёс, бегущий краем моря»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1979–1980</span><div class="timeline-content"><b>Дуглас Адамс</b> — «Автостопом по галактике»; <b>Умберто Эко</b> — «Имя розы»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1981–1985</span><div class="timeline-content"><b>Владимир Железников</b> — «Чучело»; <b>Леонид Филатов</b> — «Про Федота-стрельца...»; <b>Патрик Зюскинд</b> — «Парфюмер»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1982–2009</span><div class="timeline-content"><b>Харуки Мураками</b> — «Охота на овец», «Норвежский лес», «Кафка на пляже», «1Q84»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1983–2014</span><div class="timeline-content"><b>Терри Пратчетт</b> — Цикл «Плоский мир»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1984–1988</span><div class="timeline-content"><b>Милан Кундера</b> — «Невыносимая легкость бытия»; <b>Пауло Коэльо</b> — «Алхимик»; <b>Томас Харрис</b> — «Молчание ягнят»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1990–1998</span><div class="timeline-content"><b>Анджей Сапковский</b> — Сага о Ведьмаке</div></div>
+    <div class="timeline-item"><span class="timeline-date">1995–1997</span><div class="timeline-content"><b>Павел Санаев</b> — «Похороните меня за плинтусом»; <b>Артур Голден</b> — «Мемуары гейши»</div></div>
+    <div class="timeline-item"><span class="timeline-date">1997–2007</span><div class="timeline-content"><b>Джоан Роулинг</b> — Серия книг о Гарри Поттере</div></div>
+    <div class="timeline-item"><span class="timeline-date">1998–2009</span><div class="timeline-content"><b>Борис Акунин</b> — Цикл об Эрасте Фандорине</div></div>
+</div></div>
+
+
 	<!-----------------------------ИДИОМЫ------------------------>
-    <div class="tab-pane" id="29">
+    <div class="tab-pane fade" id="idioms" role="tabpanel">
 
 <h4 style="text-align: center; margin-bottom: 20px;">
     Английские идиомы
@@ -3670,372 +3869,9 @@
     <b>Vox clamantis in deserto</b><br>
     Глас вопиющего в пустыне.
 </div>
-
-  </div></div></div></div>
-
-
-	<div class="tab-pane" id="39" style="font-size:14px;">
-		
-
-  <!-- Древность и Средневековье -->
-  <h4 style="background-color:black; color:white; text-transform:uppercase; padding:10px; font-size:20px; margin-top:20px; margin-bottom:10px;">Древность и Средневековье</h4>
-  <div style="display:flex; flex-wrap:wrap; gap:10px;">
-    <div style="width:25%;">
-      <b>≈600 до н. э.</b><br>
-      Электризация янтаря<br>
-      <i>Фалес Милетский</i>
-    </div>
-    <div style="width:25%;">
-      <b>≈400 до н. э.</b><br>
-      Теория атомов<br>
-      <i>Демокрит</i>
-    </div>
-    <div style="width:25%;">
-      <b>≈250 до н. э.</b><br>
-      Закон Архимеда (плавучесть тел)<br>
-      <i>Архимед</i>
-    </div>
-    <div style="width:25%;">
-      <b>≈150 до н. э.</b><br>
-      Каталог звёзд, величины звёзд<br>
-      <i>Гиппарх</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>≈150 г.</b><br>
-      Геоцентрическая система мира<br>
-      <i>Птолемей</i>
-    </div>
-    <div style="width:25%;">
-      <b>1020-е</b><br>
-      «Канон врачебной науки»<br>
-      <i>Авиценна</i>
-    </div>
-    <div style="width:25%;">
-      <b>1269</b><br>
-      Исследование магнитных свойств<br>
-      <i>Петр Перегрин</i>
-    </div>
-    <div style="width:25%;">
-      <b>1543</b><br>
-      Гелиоцентрическая система<br>
-      <i>Николай Коперник</i>
-    </div>
-  </div>
-
-  <!-- XVII век -->
-  <h4 style="background-color:black; color:white; text-transform:uppercase; padding:10px; font-size:20px; margin-top:20px; margin-bottom:10px;">XVII век</h4>
-  <div style="display:flex; flex-wrap:wrap; gap:10px;">
-    <div style="width:25%;">
-      <b>1609</b><br>
-      Законы движения планет (1-й и 2-й)<br>
-      <i>Иоганн Кеплер</i>
-    </div>
-    <div style="width:25%;">
-      <b>1610</b><br>
-      Спутники Юпитера, фазы Венеры<br>
-      <i>Галилео Галилей</i>
-    </div>
-    <div style="width:25%;">
-      <b>1628</b><br>
-      Кровообращение<br>
-      <i>Уильям Гарвей</i>
-    </div>
-    <div style="width:25%;">
-      <b>1665</b><br>
-      Открытие клетки<br>
-      <i>Роберт Гук</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1676</b><br>
-      Измерение скорости света<br>
-      <i>Оле Ремер</i>
-    </div>
-    <div style="width:25%;">
-      <b>1687</b><br>
-      Закон всемирного тяготения<br>
-      <i>Исаак Ньютон</i>
-    </div>
-  </div>
-
-  <!-- XVIII век -->
-  <h4 style="background-color:black; color:white; text-transform:uppercase; padding:10px; font-size:20px; margin-top:20px; margin-bottom:10px;">XVIII век</h4>
-  <div style="display:flex; flex-wrap:wrap; gap:10px;">
-    <div style="width:25%;">
-      <b>1752</b><br>
-      Электрическая природа молнии<br>
-      <i>Бенджамин Франклин</i>
-    </div>
-    <div style="width:25%;">
-      <b>1769</b><br>
-      Паровая машина (усовершенствование)<br>
-      <i>Джеймс Уатт</i>
-    </div>
-    <div style="width:25%;">
-      <b>1774</b><br>
-      Кислород<br>
-      <i>Джозеф Пристли</i>
-    </div>
-    <div style="width:25%;">
-      <b>1785</b><br>
-      Закон Кулона<br>
-      <i>Шарль Кулон</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1789</b><br>
-      Закон сохранения массы<br>
-      <i>Антуан Лавуазье</i>
-    </div>
-  </div>
-
-  <!-- XIX век -->
-  <h4 style="background-color:black; color:white; text-transform:uppercase; padding:10px; font-size:20px; margin-top:20px; margin-bottom:10px;">XIX век</h4>
-  <div style="display:flex; flex-wrap:wrap; gap:10px;">
-    <div style="width:25%;">
-      <b>1800</b><br>
-      Электрическая батарея<br>
-      <i>Алессандро Вольта</i>
-    </div>
-    <div style="width:25%;">
-      <b>1820</b><br>
-      Электромагнетизм<br>
-      <i>Ганс Кристиан Эрстед</i>
-    </div>
-    <div style="width:25%;">
-      <b>1821</b><br>
-      Электродвигатель (принцип)<br>
-      <i>Майкл Фарадей</i>
-    </div>
-    <div style="width:25%;">
-      <b>1826</b><br>
-      Первая фотография<br>
-      <i>Жозеф Нисефор Ньепс</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1828</b><br>
-      Синтез мочевины<br>
-      <i>Фридрих Вёлер</i>
-    </div>
-    <div style="width:25%;">
-      <b>1831</b><br>
-      Электромагнитная индукция<br>
-      <i>Майкл Фарадей</i>
-    </div>
-    <div style="width:25%;">
-      <b>1838</b><br>
-      Клеточная теория<br>
-      <i>Шлейден и Шванн</i>
-    </div>
-    <div style="width:25%;">
-      <b>1856</b><br>
-      Первый синтетический краситель<br>
-      <i>Уильям Перкин</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1859</b><br>
-      Теория эволюции<br>
-      <i>Чарльз Дарвин</i>
-    </div>
-    <div style="width:25%;">
-      <b>1869</b><br>
-      Периодическая система элементов<br>
-      <i>Дмитрий Менделеев</i>
-    </div>
-    <div style="width:25%;">
-      <b>1876</b><br>
-      Телефон<br>
-      <i>Александр Белл</i>
-    </div>
-    <div style="width:25%;">
-      <b>1877</b><br>
-      Фонограф<br>
-      <i>Томас Эдисон</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1888</b><br>
-      Пленочная фотокамера<br>
-      <i>Джордж Истмен</i>
-    </div>
-    <div style="width:25%;">
-      <b>1895</b><br>
-      Кино<br>
-      <i>Люмьер</i>
-    </div>
-    <div style="width:25%;">
-      <b>1896</b><br>
-      Радиоактивность<br>
-      <i>Анри Беккерель</i>
-    </div>
-    <div style="width:25%;">
-      <b>1898</b><br>
-      Полоний и радий<br>
-      <i>Мария и Пьер Кюри</i>
-    </div>
-  </div>
-
-  <!-- XX век -->
-  <h4 style="background-color:black; color:white; text-transform:uppercase; padding:10px; font-size:20px; margin-top:20px; margin-bottom:10px;">XX век</h4>
-  <div style="display:flex; flex-wrap:wrap; gap:10px;">
-    <div style="width:25%;">
-      <b>1901</b><br>
-      Радио<br>
-      <i>Гульельмо Маркони</i>
-    </div>
-    <div style="width:25%;">
-      <b>1905</b><br>
-      Теория относительности<br>
-      <i>Альберт Эйнштейн</i>
-    </div>
-    <div style="width:25%;">
-      <b>1911</b><br>
-      Ядро атома<br>
-      <i>Эрнест Резерфорд</i>
-    </div>
-    <div style="width:25%;">
-      <b>1913</b><br>
-      Модель атома<br>
-      <i>Нильс Бор</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1928</b><br>
-      Пенициллин<br>
-      <i>Александр Флеминг</i>
-    </div>
-    <div style="width:25%;">
-      <b>1932</b><br>
-      Нейтрон<br>
-      <i>Джеймс Чедвик</i>
-    </div>
-    <div style="width:25%;">
-      <b>1936</b><br>
-      Телевидение<br>
-      <i>Филлипс, RCA</i>
-    </div>
-    <div style="width:25%;">
-      <b>1938</b><br>
-      Ядерное деление<br>
-      <i>Отто Ган, Лиза Мейтнер</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1942</b><br>
-      Первая цепная реакция<br>
-      <i>Энрико Ферми</i>
-    </div>
-    <div style="width:25%;">
-      <b>1947</b><br>
-      Транзистор<br>
-      <i>Шокли, Бардин, Браттейн</i>
-    </div>
-    <div style="width:25%;">
-      <b>1953</b><br>
-      Структура ДНК<br>
-      <i>Уотсон, Крик, Франклин</i>
-    </div>
-    <div style="width:25%;">
-      <b>1957</b><br>
-      Искусственный спутник Земли<br>
-      <i>СССР</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1964</b><br>
-      Кварковая модель<br>
-      <i>Мюррей Гелл-Ман</i>
-    </div>
-    <div style="width:25%;">
-      <b>1965</b><br>
-      Космическое микроволновое излучение<br>
-      <i>Пензиас и Уилсон</i>
-    </div>
-    <div style="width:25%;">
-      <b>1969</b><br>
-      Посадка на Луну<br>
-      <i>NASA (Аполлон-11)</i>
-    </div>
-    <div style="width:25%;">
-      <b>1971</b><br>
-      Микропроцессор<br>
-      <i>Intel</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>1977</b><br>
-      ДНК-полимераза Taq<br>
-      <i>Томас Брок</i>
-    </div>
-    <div style="width:25%;">
-      <b>1983</b><br>
-      ПЦР<br>
-      <i>Кэри Маллис</i>
-    </div>
-    <div style="width:25%;">
-      <b>1989</b><br>
-      Всемирная паутина (WWW)<br>
-      <i>Тим Бернерс-Ли</i>
-    </div>
-    <div style="width:25%;">
-      <b>1995</b><br>
-      Первая экзопланета<br>
-      <i>Майор и Келло</i>
-    </div>
-  </div>
-
-  <!-- XXI век -->
-  <h4 style="background-color:black; color:white; text-transform:uppercase; padding:10px; font-size:20px; margin-top:20px; margin-bottom:10px;">XXI век</h4>
-  <div style="display:flex; flex-wrap:wrap; gap:10px;">
-    <div style="width:25%;">
-      <b>2003</b><br>
-      Завершён проект «Геном человека»<br>
-      <i>Международный консорциум</i>
-    </div>
-    <div style="width:25%;">
-      <b>2004</b><br>
-      Графен<br>
-      <i>Андрей Гейм, Константин Новосёлов</i>
-    </div>
-    <div style="width:25%;">
-      <b>2012</b><br>
-      Бозон Хиггса<br>
-      <i>CERN</i>
-    </div>
-    <div style="width:25%;">
-      <b>2015</b><br>
-      Гравитационные волны<br>
-      <i>LIGO</i>
-    </div>
-
-    <div style="width:25%;">
-      <b>2017</b><br>
-      Фото чёрной дыры<br>
-      <i>Проект EHT</i>
-    </div>
-    <div style="width:25%;">
-      <b>2020</b><br>
-      Вакцины против COVID-19<br>
-      <i>Pfizer/BioNTech, Moderna</i>
-    </div>
-    <div style="width:25%;">
-      <b>2022</b><br>
-      Прорывные успехи ИИ (ChatGPT, DALL·E)<br>
-      <i>OpenAI</i>
-    </div>
-  </div>
-
 </div>
-
-	  
 </div>
-
-		
-	  </div>
-		<div class="tab-pane" id="40">
+<div class="tab-pane fade" id="pf" role="tabpanel">
 	<div style="display:flex; flex-wrap:wrap; gap:10px;">
 <div style="width:10%;"><b>Создатель русского театра</b><br><i>Ф.Г. Волков</i></div>
 <div style="width:10%;"><b>Отец русской космонавтики</b><br><i>К.Э. Циолковский</i></div>
@@ -4210,89 +4046,684 @@
 <div style="width:10%;"><b>Стена в десять тысяч ли</b><br><i>Великая Китайская Стена</i></div>
 <div style="width:10%;"><b>Председатель земного шара</b><br><i>Велимир Хлебников</i></div>
 
- </div>
+ </div></div>
+
+
+	<div class="tab-pane fade" id="science" role="tabpanel">
+		
+  <!-- Древность и Средневековье -->
+  <h4>Древность и Средневековье</h4>
+  <div>
+    <div class="science-grid">
+    	<div class="science-item">
+      <b>≈600 до н. э.</b><br>
+      Электризация янтаря<br>
+      <i>Фалес Милетский</i>
+    </div>
+    <div class="science-item">
+      <b>≈400 до н. э.</b><br>
+      Теория атомов<br>
+      <i>Демокрит</i>
+    </div>
+    <div class="science-item">
+      <b>≈250 до н. э.</b><br>
+      Закон Архимеда (плавучесть тел)<br>
+      <i>Архимед</i>
+    </div>
+    <div class="science-item">
+      <b>≈150 до н. э.</b><br>
+      Каталог звёзд, величины звёзд<br>
+      <i>Гиппарх</i>
+    </div>
+
+    <div class="science-item">
+      <b>≈150 г.</b><br>
+      Геоцентрическая система мира<br>
+      <i>Птолемей</i>
+    </div>
+    <div class="science-item">
+      <b>1020-е</b><br>
+      «Канон врачебной науки»<br>
+      <i>Авиценна</i>
+    </div>
+    <div class="science-item">
+      <b>1269</b><br>
+      Исследование магнитных свойств<br>
+      <i>Петр Перегрин</i>
+    </div>
+    <div class="science-item">
+      <b>1543</b><br>
+      Гелиоцентрическая система<br>
+      <i>Николай Коперник</i>
+    </div>
+  </div>
+
+  <!-- XVII век -->
+  <h4>XVII век</h4>
+   <div class="science-grid">
+    	<div class="science-item">
+      <b>1609</b><br>
+      Законы движения планет (1-й и 2-й)<br>
+      <i>Иоганн Кеплер</i>
+    </div>
+    <div class="science-item">
+      <b>1610</b><br>
+      Спутники Юпитера, фазы Венеры<br>
+      <i>Галилео Галилей</i>
+    </div>
+    <div class="science-item">
+      <b>1628</b><br>
+      Кровообращение<br>
+      <i>Уильям Гарвей</i>
+    </div>
+    <div class="science-item">
+      <b>1665</b><br>
+      Открытие клетки<br>
+      <i>Роберт Гук</i>
+    </div>
+<div class="science-item">
+      <b>1676</b><br>
+      Измерение скорости света<br>
+      <i>Оле Ремер</i>
+    </div>
+    <div class="science-item">
+      <b>1687</b><br>
+      Закон всемирного тяготения<br>
+      <i>Исаак Ньютон</i>
+    </div>
+  </div>
+
+  <!-- XVIII век -->
+  <h4>XVIII век</h4>
+   <div class="science-grid">
+    	<div class="science-item">
+      <b>1752</b><br>
+      Электрическая природа молнии<br>
+      <i>Бенджамин Франклин</i>
+    </div>
+    <div class="science-item">
+      <b>1769</b><br>
+      Паровая машина (усовершенствование)<br>
+      <i>Джеймс Уатт</i>
+    </div>
+    <div class="science-item">
+      <b>1774</b><br>
+      Кислород<br>
+      <i>Джозеф Пристли</i>
+    </div>
+    <div class="science-item">
+      <b>1785</b><br>
+      Закон Кулона<br>
+      <i>Шарль Кулон</i>
+    </div>
+<div class="science-item">
+      <b>1789</b><br>
+      Закон сохранения массы<br>
+      <i>Антуан Лавуазье</i>
+    </div>
+  </div>
+
+  <!-- XIX век -->
+  <h4>XIX век</h4>
+   <div class="science-grid">
+    	<div class="science-item">
+      <b>1800</b><br>
+      Электрическая батарея<br>
+      <i>Алессандро Вольта</i>
+    </div>
+    <div class="science-item">
+      <b>1820</b><br>
+      Электромагнетизм<br>
+      <i>Ганс Кристиан Эрстед</i>
+    </div>
+    <div class="science-item">
+      <b>1821</b><br>
+      Электродвигатель (принцип)<br>
+      <i>Майкл Фарадей</i>
+    </div>
+    <div class="science-item">
+      <b>1826</b><br>
+      Первая фотография<br>
+      <i>Жозеф Нисефор Ньепс</i>
+    </div>
+<div class="science-item">
+      <b>1828</b><br>
+      Синтез мочевины<br>
+      <i>Фридрих Вёлер</i>
+    </div>
+    <div class="science-item">
+      <b>1831</b><br>
+      Электромагнитная индукция<br>
+      <i>Майкл Фарадей</i>
+    </div>
+    <div class="science-item">
+      <b>1838</b><br>
+      Клеточная теория<br>
+      <i>Шлейден и Шванн</i>
+    </div>
+    <div class="science-item">
+      <b>1856</b><br>
+      Первый синтетический краситель<br>
+      <i>Уильям Перкин</i>
+    </div>
+<div class="science-item">
+      <b>1859</b><br>
+      Теория эволюции<br>
+      <i>Чарльз Дарвин</i>
+    </div>
+    <div class="science-item">
+      <b>1869</b><br>
+      Периодическая система элементов<br>
+      <i>Дмитрий Менделеев</i>
+    </div>
+   <div class="science-item">
+      <b>1876</b><br>
+      Телефон<br>
+      <i>Александр Белл</i>
+    </div>
+    <div class="science-item">
+      <b>1877</b><br>
+      Фонограф<br>
+      <i>Томас Эдисон</i>
+    </div>
+<div class="science-item">
+      <b>1888</b><br>
+      Пленочная фотокамера<br>
+      <i>Джордж Истмен</i>
+    </div>
+    <div class="science-item">
+      <b>1895</b><br>
+      Кино<br>
+      <i>Люмьер</i>
+    </div>
+    <div class="science-item">
+      <b>1896</b><br>
+      Радиоактивность<br>
+      <i>Анри Беккерель</i>
+    </div>
+    <div class="science-item">
+      <b>1898</b><br>
+      Полоний и радий<br>
+      <i>Мария и Пьер Кюри</i>
+    </div>
+  </div>
+
+  <!-- XX век -->
+  <h4>XX век</h4>
+   <div class="science-grid">
+    	<div class="science-item">
+      <b>1901</b><br>
+      Радио<br>
+      <i>Гульельмо Маркони</i>
+    </div>
+    <div class="science-item">
+      <b>1905</b><br>
+      Теория относительности<br>
+      <i>Альберт Эйнштейн</i>
+    </div>
+    <div class="science-item">
+      <b>1911</b><br>
+      Ядро атома<br>
+      <i>Эрнест Резерфорд</i>
+    </div>
+    <div class="science-item">
+      <b>1913</b><br>
+      Модель атома<br>
+      <i>Нильс Бор</i>
+    </div>
+<div class="science-item">
+      <b>1928</b><br>
+      Пенициллин<br>
+      <i>Александр Флеминг</i>
+    </div>
+    <div class="science-item">
+      <b>1932</b><br>
+      Нейтрон<br>
+      <i>Джеймс Чедвик</i>
+    </div>
+    <div class="science-item">
+      <b>1936</b><br>
+      Телевидение<br>
+      <i>Филлипс, RCA</i>
+    </div>
+    <div class="science-item">
+      <b>1938</b><br>
+      Ядерное деление<br>
+      <i>Отто Ган, Лиза Мейтнер</i>
+    </div>
+    <div class="science-item">
+      <b>1942</b><br>
+      Первая цепная реакция<br>
+      <i>Энрико Ферми</i>
+    </div>
+    <div class="science-item">
+      <b>1947</b><br>
+      Транзистор<br>
+      <i>Шокли, Бардин, Браттейн</i>
+    </div>
+    <div class="science-item">
+      <b>1953</b><br>
+      Структура ДНК<br>
+      <i>Уотсон, Крик, Франклин</i>
+    </div>
+    <div class="science-item">
+      <b>1957</b><br>
+      Искусственный спутник Земли<br>
+      <i>СССР</i>
+    </div>
+    <div class="science-item">
+      <b>1964</b><br>
+      Кварковая модель<br>
+      <i>Мюррей Гелл-Ман</i>
+    </div>
+    <div class="science-item">
+      <b>1965</b><br>
+      Космическое микроволновое излучение<br>
+      <i>Пензиас и Уилсон</i>
+    </div>
+    <div class="science-item">
+      <b>1969</b><br>
+      Посадка на Луну<br>
+      <i>NASA (Аполлон-11)</i>
+    </div>
+    <div class="science-item">
+      <b>1971</b><br>
+      Микропроцессор<br>
+      <i>Intel</i>
+    </div>
+<div class="science-item">
+      <b>1977</b><br>
+      ДНК-полимераза Taq<br>
+      <i>Томас Брок</i>
+    </div>
+   <div class="science-item">
+      <b>1983</b><br>
+      ПЦР<br>
+      <i>Кэри Маллис</i>
+    </div>
+   <div class="science-item">
+      <b>1989</b><br>
+      Всемирная паутина (WWW)<br>
+      <i>Тим Бернерс-Ли</i>
+    </div>
+    <div class="science-item">
+      <b>1995</b><br>
+      Первая экзопланета<br>
+      <i>Майор и Келло</i>
+    </div>
+  </div>
+
+  <!-- XXI век -->
+  <h4>XXI век</h4>
+  <div class="science-grid">
+    	<div class="science-item">
+      <b>2003</b><br>
+      Завершён проект «Геном человека»<br>
+      <i>Международный консорциум</i>
+    </div>
+    <div class="science-item">
+      <b>2004</b><br>
+      Графен<br>
+      <i>Андрей Гейм, Константин Новосёлов</i>
+    </div>
+    <div class="science-item">
+      <b>2012</b><br>
+      Бозон Хиггса<br>
+      <i>CERN</i>
+    </div>
+    <div>
+      <b>2015</b><br>
+      Гравитационные волны<br>
+      <i>LIGO</i>
+    </div>
+
+    <div>
+      <b>2017</b><br>
+      Фото чёрной дыры<br>
+      <i>Проект EHT</i>
+    </div>
+    <div>
+      <b>2020</b><br>
+      Вакцины против COVID-19<br>
+      <i>Pfizer/BioNTech, Moderna</i>
+    </div>
+    <div>
+      <b>2022</b><br>
+      Прорывные успехи ИИ (ChatGPT, DALL·E)<br>
+      <i>OpenAI</i>
+    </div>
+  </div>
+</div>
+
+		
 
 </div>
 
 	  
 
 
-		<div class="tab-pane" id="41">
-	<div style="display:flex; flex-wrap:wrap; gap:10px;">
+		<div class="tab-pane fade" id="oi" role="tabpanel">
+  
+  <div class="olympic-grid">
 
+    <div class="olympic-item">
+      <div class="olympic-info">
+        <b>Афины</b>, Греция <span class="olympic-date">1896</span>
+      </div>
+      <span class="olympic-type">Летние</span>
+    </div>
 
-  <style>
-  table {
-    border-collapse: collapse;
-  }
-  td {
-    padding: 4px 10px;      /* отступы внутри ячеек */
-    line-height: 1.4;       /* немного больше расстояние между строками */
-  }
-</style>
-<table style="border-collapse: collapse;">
- 
-<tr><td><b>Афины</b></td><td>Греция</td><td><i>1896</i></td><td>Летние</td></tr>
-<tr><td><b>Париж</b></td><td>Франция</td><td><i>1900</i></td><td>Летние</td></tr>
-<tr><td><b>Чикаго - Сент-Луис</b></td><td>США</td><td><i>1904</i></td><td>Летние</td></tr>
-<tr><td><b>Афины</b></td><td>Греция</td><td><i>1906</i></td><td>Летние</td></tr>
-<tr><td><b>Рим-Лондон</b></td><td>Италия-Британия</td><td><i>1908</i></td><td>Летние</td></tr>
-<tr><td><b>Стокгольм</b></td><td>Швеция</td><td><i>1912</i></td><td>Летние</td></tr>
+    <div class="olympic-item">
+      <div class="olympic-info">
+        <b>Париж</b>, Франция <span class="olympic-date">1900</span>
+      </div>
+      <span class="olympic-type">Летние</span>
+    </div>
 
-<tr><td><b>Антверпен</b></td><td>Бельгия</td><td><i>1920</i></td><td>Летние</td></tr>
-<tr><td><b>Париж</b></td><td>Франция</td><td><i>1924</i></td><td>Летние</td></tr>
-<tr><td><b>Шамони</b></td><td>Франция</td><td><i>1924</i></td><td>Зимние</td></tr>
-<tr><td><b>Амстердам</b></td><td>Нидерланды</td><td><i>1928</i></td><td>Летние</td></tr>
-<tr><td><b>Санкт-Мориц</b></td><td>Швейцария</td><td><i>1928</i></td><td>Зимние</td></tr>
-<tr><td><b>Лос-Анджелес</b></td><td>США</td><td><i>1932</i></td><td>Летние</td></tr>
-<tr><td><b>Лейк-Плэсид</b></td><td>США</td><td><i>1932</i></td><td>Зимние</td></tr>
-<tr><td><b>Берлин</b></td><td>Германия</td><td><i>1936</i></td><td>Летние</td></tr>
-<tr><td><b>Гармиш-Партенкирхен</b></td><td>Германия</td><td><i>1936</i></td><td>Зимние</td></tr>
+    <div class="olympic-item">
+      <div class="olympic-info">
+        <b>Чикаго – Сент-Луис</b>, США <span class="olympic-date">1904</span>
+      </div>
+      <span class="olympic-type">Летние</span>
+    </div>
 
-<tr><td><b>Лондон</b></td><td>Великобритания</td><td><i>1948</i></td><td>Летние</td></tr>
-<tr><td><b>Санкт-Мориц</b></td><td>Швейцария</td><td><i>1948</i></td><td>Зимние</td></tr>
-<tr><td><b>Хельсинки</b></td><td>Финляндия</td><td><i>1952</i></td><td>Летние</td></tr>
-<tr><td><b>Осло</b></td><td>Норвегия</td><td><i>1952</i></td><td>Зимние</td></tr>
-<tr><td><b>Мельбурн</b></td><td>Австралия</td><td><i>1956</i></td><td>Летние</td></tr>
-<tr><td><b>Кортина д'Ампеццо</b></td><td>Италия</td><td><i>1956</i></td><td>Зимние</td></tr>
-<tr><td><b>Рим</b></td><td>Италия</td><td><i>1960</i></td><td>Летние</td></tr>
-<tr><td><b>Скво-Велли</b></td><td>США</td><td><i>1960</i></td><td>Зимние</td></tr>
-<tr><td><b>Токио</b></td><td>Япония</td><td><i>1964</i></td><td>Летние</td></tr>
-<tr><td><b>Инсбрук</b></td><td>Австрия</td><td><i>1964</i></td><td>Зимние</td></tr>
-<tr><td><b>Мехико</b></td><td>Мексика</td><td><i>1968</i></td><td>Летние</td></tr>
-<tr><td><b>Гренобль</b></td><td>Франция</td><td><i>1968</i></td><td>Зимние</td></tr>
+    <div class="olympic-item">
+      <div class="olympic-info">
+        <b>Афины</b>, Греция <span class="olympic-date">1906</span>
+      </div>
+      <span class="olympic-type">Летние</span>
+    </div>
 
-<tr><td><b>Мюнхен</b></td><td>ФРГ</td><td><i>1972</i></td><td>Летние</td></tr>
-<tr><td><b>Саппоро</b></td><td>Япония</td><td><i>1972</i></td><td>Зимние</td></tr>
-<tr><td><b>Монреаль</b></td><td>Канада</td><td><i>1976</i></td><td>Летние</td></tr>
-<tr><td><b>Денвер - Инсбрук</b></td><td>США - Австрия</td><td><i>1976</i></td><td>Зимние</td></tr>
-<tr><td><b>Москва</b></td><td>СССР</td><td><i>1980</i></td><td>Летние</td></tr>
-<tr><td><b>Лейк-Плэсид</b></td><td>США</td><td><i>1980</i></td><td>Зимние</td></tr>
-<tr><td><b>Лос-Анджелес</b></td><td>США</td><td><i>1984</i></td><td>Летние</td></tr>
-<tr><td><b>Сараево</b></td><td>Югославия</td><td><i>1984</i></td><td>Зимние</td></tr>
-<tr><td><b>Сеул</b></td><td>Южная Корея</td><td><i>1988</i></td><td>Летние</td></tr>
-<tr><td><b>Калгари</b></td><td>Канада</td><td><i>1988</i></td><td>Зимние</td></tr>
+    <div class="olympic-item">
+      <div class="olympic-info">
+        <b>Рим – Лондон</b>, Италия/Британия <span class="olympic-date">1908</span>
+      </div>
+      <span class="olympic-type">Летние</span>
+    </div>
 
-<tr><td><b>Барселона</b></td><td>Испания</td><td><i>1992</i></td><td>Летние</td></tr>
-<tr><td><b>Альбервиль</b></td><td>Франция</td><td><i>1992</i></td><td>Зимние</td></tr>
-<tr><td><b>Лиллехаммер</b></td><td>Норвегия</td><td><i>1994</i></td><td>Зимние</td></tr>
-<tr><td><b>Атланта</b></td><td>США</td><td><i>1996</i></td><td>Летние</td></tr>
-<tr><td><b>Нагано</b></td><td>Япония</td><td><i>1998</i></td><td>Зимние</td></tr>
+    <div class="olympic-item">
+      <div class="olympic-info">
+        <b>Стокгольм</b>, Швеция <span class="olympic-date">1912</span>
+      </div>
+      <span class="olympic-type">Летние</span>
+    </div>
 
-<tr><td><b>Сидней</b></td><td>Австралия</td><td><i>2000</i></td><td>Летние</td></tr>
-<tr><td><b>Солт-Лейк-Сити</b></td><td>США</td><td><i>2002</i></td><td>Зимние</td></tr>
-<tr><td><b>Афины</b></td><td>Греция</td><td><i>2004</i></td><td>Летние</td></tr>
-<tr><td><b>Турин</b></td><td>Италия</td><td><i>2006</i></td><td>Зимние</td></tr>
-<tr><td><b>Пекин</b></td><td>КНР</td><td><i>2008</i></td><td>Летние</td></tr>
-<tr><td><b>Ванкувер</b></td><td>Канада</td><td><i>2010</i></td><td>Зимние</td></tr>
-<tr><td><b>Лондон</b></td><td>Великобритания</td><td><i>2012</i></td><td>Летние</td></tr>
-<tr><td><b>Сочи</b></td><td>Россия</td><td><i>2014</i></td><td>Зимние</td></tr>
-<tr><td><b>Рио-де-Жанейро</b></td><td>Бразилия</td><td><i>2016</i></td><td>Летние</td></tr>
-<tr><td><b>Пхёнчхан</b></td><td>Южная Корея</td><td><i>2018</i></td><td>Зимние</td></tr>
-<tr><td><b>Токио</b></td><td>Япония</td><td><i>2021</i></td><td>Летние</td></tr>
-<tr><td><b>Пекин</b></td><td>КНР</td><td><i>2022</i></td><td>Зимние</td></tr>
+    <div class="olympic-item">
+      <div class="olympic-info">
+        <b>Антверпен</b>, Бельгия <span class="olympic-date">1920</span>
+      </div>
+      <span class="olympic-type">Летние</span>
+    </div>
 
-</table>
+    <div class="olympic-item">
+      <div class="olympic-info">
+        <b>Париж</b>, Франция <span class="olympic-date">1924</span>
+      </div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info">
+        <b>Шамони</b>, Франция <span class="olympic-date">1924</span>
+      </div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Амстердам</b>, Нидерланды <span class="olympic-date">1928</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Санкт-Мориц</b>, Швейцария <span class="olympic-date">1928</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Лос-Анджелес</b>, США <span class="olympic-date">1932</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Лейк-Плэсид</b>, США <span class="olympic-date">1932</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Берлин</b>, Германия <span class="olympic-date">1936</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Гармиш-Партенкирхен</b>, Германия <span class="olympic-date">1936</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Лондон</b>, Великобритания <span class="olympic-date">1948</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Санкт-Мориц</b>, Швейцария <span class="olympic-date">1948</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Хельсинки</b>, Финляндия <span class="olympic-date">1952</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Осло</b>, Норвегия <span class="olympic-date">1952</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Мельбурн</b>, Австралия <span class="olympic-date">1956</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Кортина д'Ампеццо</b>, Италия <span class="olympic-date">1956</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Рим</b>, Италия <span class="olympic-date">1960</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Скво-Велли</b>, США <span class="olympic-date">1960</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Токио</b>, Япония <span class="olympic-date">1964</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Инсбрук</b>, Австрия <span class="olympic-date">1964</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Мехико</b>, Мексика <span class="olympic-date">1968</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Гренобль</b>, Франция <span class="olympic-date">1968</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Мюнхен</b>, ФРГ <span class="olympic-date">1972</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Саппоро</b>, Япония <span class="olympic-date">1972</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Монреаль</b>, Канада <span class="olympic-date">1976</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Инсбрук</b>, Австрия <span class="olympic-date">1976</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Москва</b>, СССР <span class="olympic-date">1980</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Лейк-Плэсид</b>, США <span class="olympic-date">1980</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Лос-Анджелес</b>, США <span class="olympic-date">1984</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Сараево</b>, Югославия <span class="olympic-date">1984</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Сеул</b>, Южная Корея <span class="olympic-date">1988</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Калгари</b>, Канада <span class="olympic-date">1988</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Барселона</b>, Испания <span class="olympic-date">1992</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Альбервиль</b>, Франция <span class="olympic-date">1992</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Лиллехаммер</b>, Норвегия <span class="olympic-date">1994</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Атланта</b>, США <span class="olympic-date">1996</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Нагано</b>, Япония <span class="olympic-date">1998</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Сидней</b>, Австралия <span class="olympic-date">2000</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Солт-Лейк-Сити</b>, США <span class="olympic-date">2002</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Афины</b>, Греция <span class="olympic-date">2004</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Турин</b>, Италия <span class="olympic-date">2006</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Пекин</b>, КНР <span class="olympic-date">2008</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Ванкувер</b>, Канада <span class="olympic-date">2010</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Лондон</b>, Великобритания <span class="olympic-date">2012</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Сочи</b>, Россия <span class="olympic-date">2014</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Рио-де-Жанейро</b>, Бразилия <span class="olympic-date">2016</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Пхёнчхан</b>, Южная Корея <span class="olympic-date">2018</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Токио</b>, Япония <span class="olympic-date">2021</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Пекин</b>, КНР <span class="olympic-date">2022</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+    
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Париж</b>, Франция <span class="olympic-date">2024</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Милан и Кортина-д’Ампеццо</b>, Италия <span class="olympic-date">2026</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Лос-Анджелес</b>, США <span class="olympic-date">2028</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Французские Альпы</b>, Франция <span class="olympic-date">2030</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+    <div class="olympic-item">
+      <div class="olympic-info"><b>Брисбен</b>, Австралия <span class="olympic-date">2032</span></div>
+      <span class="olympic-type">Летние</span>
+    </div>
+
+    <div class="olympic-item" style="border-left: 3px solid #0dcaf0;">
+      <div class="olympic-info"><b>Солт-Лейк-Сити</b>, США <span class="olympic-date">2034</span></div>
+      <span class="olympic-type">Зимние</span>
+    </div>
+
+  </div>
+</div>
 
 
 
@@ -4301,14 +4732,15 @@
 </div>
 	  
 		</div>
-	
- 
-	
-			
 
-			<div id="scrollup"><img src="img/up.png"></div>
 	</div>
 
+<button type="button" class="btn btn-primary btn-floating" id="btn-back-to-top">
+  ↑
+</button>
+  
 
+    <!-- 2. Ваш файл -->
+    <script src="scripts.js"></script>
 </body>
 </html>
